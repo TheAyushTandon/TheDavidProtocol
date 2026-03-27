@@ -1,0 +1,16 @@
+fastapi[all]
+uvicorn
+sqlalchemy
+pydantic
+plaid-python
+google-generativeai
+scikit-learn
+xgboost
+pandas
+python-dotenv
+cryptography
+psycopg2-binary
+joblib
+xgboost
+pytest
+httpx
