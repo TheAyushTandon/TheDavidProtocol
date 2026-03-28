@@ -39,11 +39,11 @@ async def health_check():
         "version": "1.0.0"
     }
 
-from routes import auth, plaid, scoring
+from routes import auth, bank, scoring
 
 # Include routers
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
-app.include_router(plaid.router, prefix="/plaid", tags=["Plaid"])
+app.include_router(bank.router, prefix="/bank", tags=["Bank"])
 app.include_router(scoring.router, prefix="/scoring", tags=["Scoring"])
 
 if __name__ == "__main__":

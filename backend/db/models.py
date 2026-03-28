@@ -9,11 +9,10 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String, unique=True, index=True)
     full_name = Column(String, nullable=True)
+    phone_number = Column(String, unique=True, index=True, nullable=True)
     age = Column(Integer, nullable=True)
     gender = Column(String, nullable=True)
     hashed_password = Column(String)
-    plaid_access_token = Column(String, nullable=True)  # Should be encrypted
-    plaid_item_id = Column(String, nullable=True)
     last_sync = Column(DateTime, nullable=True)
     is_active = Column(Boolean, default=True)
     created_at = Column(DateTime, default=datetime.utcnow)
@@ -27,15 +26,15 @@ class Transaction(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("users.id"))
-    plaid_transaction_id = Column(String, unique=True, index=True)
+    transaction_id = Column(String, unique=True, index=True)
     amount = Column(Float)
     date = Column(DateTime)
     name = Column(String)
-    category = Column(String)  # Plaid category
+    category = Column(String)  # Bank/CSV category
     resilience_category = Column(String, nullable=True)  # Our NLP category
     merchant_name = Column(String, nullable=True)
     is_income = Column(Boolean, default=False)
-    raw_data = Column(Text)  # JSON dump of raw Plaid data
+    raw_data = Column(Text)  # JSON dump of raw transaction data
 
     # Relationships
     user = relationship("User", back_populates="transactions")

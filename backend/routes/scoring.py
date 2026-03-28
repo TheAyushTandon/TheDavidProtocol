@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from db.base import get_db
 from db.models import User, Transaction, Score, ProcessingLog
-from services.plaid_service import PlaidService
+from services.bank_service import BankService
 from services.nlp_service import NLPService
 from services.scoring_service import ScoringService
 from datetime import datetime, timedelta
@@ -13,51 +13,34 @@ router = APIRouter()
 @router.post("/process/{user_id}")
 async def process_scoring_pipeline(user_id: int, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
-    if not user or not user.plaid_access_token:
-        raise HTTPException(status_code=400, detail="User not found or Plaid not linked")
+    if not user or not user.phone_number:
+        raise HTTPException(status_code=400, detail="User not found or phone number not linked")
     
-    # 1. Fetch Transactions (Last 90 days)
-    end_date = datetime.now()
-    start_date = end_date - timedelta(days=90)
+    # 1. Get Transactions from DB (Already synced via BankService in /bank/connect)
+    db_transactions = db.query(Transaction).filter(Transaction.user_id == user_id).all()
     
-    try:
-        transactions_data = await PlaidService.get_transactions(user.plaid_access_token, start_date, end_date)
-        plaid_transactions = transactions_data.get('transactions', [])
-    except Exception as e:
-        log = ProcessingLog(user_id=user_id, event_type="SYNC", status="FAILURE", message=str(e))
-        db.add(log)
-        db.commit()
-        raise HTTPException(status_code=500, detail=f"Plaid Sync Error: {e}")
+    if not db_transactions:
+        # If none in DB, try one last sync
+        await BankService.sync_transactions(user_id, user.phone_number, db)
+        db_transactions = db.query(Transaction).filter(Transaction.user_id == user_id).all()
 
-    # 2. Process & Categorize
+    if not db_transactions:
+        raise HTTPException(status_code=400, detail="No transaction data found for this phone number.")
+
+    # 2. Process & Categorize with NLP if not already done
     processed_transactions = []
-    for t in plaid_transactions:
-        # Check if already in DB
-        existing = db.query(Transaction).filter(Transaction.plaid_transaction_id == t['transaction_id']).first()
-        if existing:
-            processed_transactions.append({
-                "name": existing.name,
-                "amount": existing.amount,
-                "category": existing.resilience_category
-            })
-            continue
-
-        category = await NLPService.process_transaction(t)
+    for t in db_transactions:
+        if not t.resilience_category:
+            # Prepare row for NLP (simulating Plaid structure it expected)
+            t_data = json.loads(t.raw_data) if t.raw_data else {"name": t.name, "amount": t.amount}
+            category = await NLPService.process_transaction(t_data)
+            t.resilience_category = category
+            db.add(t)
         
-        new_t = Transaction(
-            user_id=user_id,
-            plaid_transaction_id=t['transaction_id'],
-            amount=t['amount'],
-            date=datetime.strptime(t['date'], '%Y-%m-%d'),
-            name=t['name'],
-            resilience_category=category,
-            raw_data=json.dumps(t)
-        )
-        db.add(new_t)
         processed_transactions.append({
-            "name": t['name'],
-            "amount": t['amount'],
-            "category": category
+            "name": t.name,
+            "amount": t.amount,
+            "category": t.resilience_category
         })
     
     db.commit()
@@ -65,7 +48,6 @@ async def process_scoring_pipeline(user_id: int, db: Session = Depends(get_db)):
     # 3. Calculate Score
     results = ScoringService.calculate_resilience_score(processed_transactions)
     
-    # Update local results for more details if needed by frontend
     results['calculated_at'] = datetime.utcnow().isoformat()
     
     new_score = Score(
