@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from ..db.base import get_db
-from ..db.models import User
-from ..services.plaid_service import PlaidService
+from db.base import get_db
+from db.models import User
+from services.plaid_service import PlaidService
 from pydantic import BaseModel
 
 router = APIRouter()

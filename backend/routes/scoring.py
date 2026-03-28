@@ -1,10 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from ..db.base import get_db
-from ..db.models import User, Transaction, Score, ProcessingLog
-from ..services.plaid_service import PlaidService
-from ..services.nlp_service import NLPService
-from ..services.scoring_service import ScoringService
+from db.base import get_db
+from db.models import User, Transaction, Score, ProcessingLog
+from services.plaid_service import PlaidService
+from services.nlp_service import NLPService
+from services.scoring_service import ScoringService
 from datetime import datetime, timedelta
 import json
 
@@ -64,6 +64,9 @@ async def process_scoring_pipeline(user_id: int, db: Session = Depends(get_db)):
 
     # 3. Calculate Score
     results = ScoringService.calculate_resilience_score(processed_transactions)
+    
+    # Update local results for more details if needed by frontend
+    results['calculated_at'] = datetime.utcnow().isoformat()
     
     new_score = Score(
         user_id=user_id,

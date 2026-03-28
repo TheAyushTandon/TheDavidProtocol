@@ -1,13 +1,16 @@
 from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, Text, Boolean
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from .base import Base
+from db.base import Base
 
 class User(Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
     email = Column(String, unique=True, index=True)
+    full_name = Column(String, nullable=True)
+    age = Column(Integer, nullable=True)
+    gender = Column(String, nullable=True)
     hashed_password = Column(String)
     plaid_access_token = Column(String, nullable=True)  # Should be encrypted
     plaid_item_id = Column(String, nullable=True)
@@ -60,3 +63,12 @@ class ProcessingLog(Base):
     status = Column(String)  # SUCCESS, FAILURE
     message = Column(String)
     timestamp = Column(DateTime, default=datetime.utcnow)
+
+class OTP(Base):
+    __tablename__ = "otps"
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, index=True)
+    code = Column(String)
+    expires_at = Column(DateTime)
+    created_at = Column(DateTime, default=datetime.utcnow)

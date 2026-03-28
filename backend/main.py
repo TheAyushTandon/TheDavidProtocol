@@ -1,11 +1,16 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from contextlib import asynccontextmanager
 import os
 from dotenv import load_dotenv
-from .db.base import engine, Base
+from db.base import engine, Base
 
-# Create database tables
-Base.metadata.create_all(bind=engine)
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Create database tables on startup
+    Base.metadata.create_all(bind=engine)
+    yield
+    # Clean up on shutdown if needed
 
 # Load environment variables
 load_dotenv()
@@ -13,7 +18,8 @@ load_dotenv()
 app = FastAPI(
     title="David Protocol API",
     description="Backend for generating Financial Resilience Scores using bank data and AI.",
-    version="1.0.0"
+    version="1.0.0",
+    lifespan=lifespan
 )
 
 # CORS configuration
@@ -33,7 +39,7 @@ async def health_check():
         "version": "1.0.0"
     }
 
-from .routes import auth, plaid, scoring
+from routes import auth, plaid, scoring
 
 # Include routers
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])

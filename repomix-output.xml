@@ -1,0 +1,4295 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+backend/__init__.py
+backend/.env.example
+backend/db/__init__.py
+backend/db/base.py
+backend/db/models.py
+backend/Dockerfile
+backend/main.py
+backend/models/__init__.py
+backend/requirements.txt
+backend/routes/__init__.py
+backend/routes/auth.py
+backend/routes/plaid.py
+backend/routes/scoring.py
+backend/scripts/train_models.py
+backend/services/__init__.py
+backend/services/nlp_service.py
+backend/services/plaid_service.py
+backend/services/scoring_service.py
+backend/utils/__init__.py
+david_protocol_access_tree.md
+david_protocol_backend_architecture.md
+DEPLOYMENT.md
+ezgif/ezgif-frame-001.jpg
+ezgif/ezgif-frame-002.jpg
+ezgif/ezgif-frame-003.jpg
+ezgif/ezgif-frame-004.jpg
+ezgif/ezgif-frame-005.jpg
+ezgif/ezgif-frame-006.jpg
+ezgif/ezgif-frame-007.jpg
+ezgif/ezgif-frame-008.jpg
+ezgif/ezgif-frame-009.jpg
+ezgif/ezgif-frame-010.jpg
+ezgif/ezgif-frame-011.jpg
+ezgif/ezgif-frame-012.jpg
+ezgif/ezgif-frame-013.jpg
+ezgif/ezgif-frame-014.jpg
+ezgif/ezgif-frame-015.jpg
+ezgif/ezgif-frame-016.jpg
+ezgif/ezgif-frame-017.jpg
+ezgif/ezgif-frame-018.jpg
+ezgif/ezgif-frame-019.jpg
+ezgif/ezgif-frame-020.jpg
+ezgif/ezgif-frame-021.jpg
+ezgif/ezgif-frame-022.jpg
+ezgif/ezgif-frame-023.jpg
+ezgif/ezgif-frame-024.jpg
+ezgif/ezgif-frame-025.jpg
+ezgif/ezgif-frame-026.jpg
+ezgif/ezgif-frame-027.jpg
+ezgif/ezgif-frame-028.jpg
+ezgif/ezgif-frame-029.jpg
+ezgif/ezgif-frame-030.jpg
+ezgif/ezgif-frame-031.jpg
+ezgif/ezgif-frame-032.jpg
+ezgif/ezgif-frame-033.jpg
+ezgif/ezgif-frame-034.jpg
+ezgif/ezgif-frame-035.jpg
+ezgif/ezgif-frame-036.jpg
+ezgif/ezgif-frame-037.jpg
+ezgif/ezgif-frame-038.jpg
+ezgif/ezgif-frame-039.jpg
+ezgif/ezgif-frame-040.jpg
+ezgif/ezgif-frame-041.jpg
+ezgif/ezgif-frame-042.jpg
+ezgif/ezgif-frame-043.jpg
+ezgif/ezgif-frame-044.jpg
+ezgif/ezgif-frame-045.jpg
+ezgif/ezgif-frame-046.jpg
+ezgif/ezgif-frame-047.jpg
+ezgif/ezgif-frame-048.jpg
+ezgif/ezgif-frame-049.jpg
+ezgif/ezgif-frame-050.jpg
+ezgif/ezgif-frame-051.jpg
+ezgif/ezgif-frame-052.jpg
+ezgif/ezgif-frame-053.jpg
+ezgif/ezgif-frame-054.jpg
+ezgif/ezgif-frame-055.jpg
+ezgif/ezgif-frame-056.jpg
+ezgif/ezgif-frame-057.jpg
+ezgif/ezgif-frame-058.jpg
+ezgif/ezgif-frame-059.jpg
+ezgif/ezgif-frame-060.jpg
+ezgif/ezgif-frame-061.jpg
+ezgif/ezgif-frame-062.jpg
+ezgif/ezgif-frame-063.jpg
+ezgif/ezgif-frame-064.jpg
+ezgif/ezgif-frame-065.jpg
+ezgif/ezgif-frame-066.jpg
+ezgif/ezgif-frame-067.jpg
+ezgif/ezgif-frame-068.jpg
+ezgif/ezgif-frame-069.jpg
+ezgif/ezgif-frame-070.jpg
+ezgif/ezgif-frame-071.jpg
+ezgif/ezgif-frame-072.jpg
+ezgif/ezgif-frame-073.jpg
+ezgif/ezgif-frame-074.jpg
+ezgif/ezgif-frame-075.jpg
+ezgif/ezgif-frame-076.jpg
+ezgif/ezgif-frame-077.jpg
+ezgif/ezgif-frame-078.jpg
+ezgif/ezgif-frame-079.jpg
+ezgif/ezgif-frame-080.jpg
+ezgif/ezgif-frame-081.jpg
+ezgif/ezgif-frame-082.jpg
+ezgif/ezgif-frame-083.jpg
+ezgif/ezgif-frame-084.jpg
+ezgif/ezgif-frame-085.jpg
+ezgif/ezgif-frame-086.jpg
+ezgif/ezgif-frame-087.jpg
+ezgif/ezgif-frame-088.jpg
+ezgif/ezgif-frame-089.jpg
+ezgif/ezgif-frame-090.jpg
+ezgif/ezgif-frame-091.jpg
+ezgif/ezgif-frame-092.jpg
+ezgif/ezgif-frame-093.jpg
+ezgif/ezgif-frame-094.jpg
+ezgif/ezgif-frame-095.jpg
+ezgif/ezgif-frame-096.jpg
+ezgif/ezgif-frame-097.jpg
+ezgif/ezgif-frame-098.jpg
+ezgif/ezgif-frame-099.jpg
+ezgif/ezgif-frame-100.jpg
+ezgif/ezgif-frame-101.jpg
+ezgif/ezgif-frame-102.jpg
+ezgif/ezgif-frame-103.jpg
+ezgif/ezgif-frame-104.jpg
+ezgif/ezgif-frame-105.jpg
+ezgif/ezgif-frame-106.jpg
+ezgif/ezgif-frame-107.jpg
+ezgif/ezgif-frame-108.jpg
+ezgif/ezgif-frame-109.jpg
+ezgif/ezgif-frame-110.jpg
+ezgif/ezgif-frame-111.jpg
+ezgif/ezgif-frame-112.jpg
+ezgif/ezgif-frame-113.jpg
+ezgif/ezgif-frame-114.jpg
+ezgif/ezgif-frame-115.jpg
+ezgif/ezgif-frame-116.jpg
+ezgif/ezgif-frame-117.jpg
+ezgif/ezgif-frame-118.jpg
+ezgif/ezgif-frame-119.jpg
+ezgif/ezgif-frame-120.jpg
+ezgif/ezgif-frame-121.jpg
+ezgif/ezgif-frame-122.jpg
+ezgif/ezgif-frame-123.jpg
+ezgif/ezgif-frame-124.jpg
+ezgif/ezgif-frame-125.jpg
+ezgif/ezgif-frame-126.jpg
+ezgif/ezgif-frame-127.jpg
+ezgif/ezgif-frame-128.jpg
+ezgif/ezgif-frame-129.jpg
+ezgif/ezgif-frame-130.jpg
+ezgif/ezgif-frame-131.jpg
+ezgif/ezgif-frame-132.jpg
+ezgif/ezgif-frame-133.jpg
+ezgif/ezgif-frame-134.jpg
+ezgif/ezgif-frame-135.jpg
+ezgif/ezgif-frame-136.jpg
+ezgif/ezgif-frame-137.jpg
+ezgif/ezgif-frame-138.jpg
+ezgif/ezgif-frame-139.jpg
+ezgif/ezgif-frame-140.jpg
+ezgif/ezgif-frame-141.jpg
+ezgif/ezgif-frame-142.jpg
+ezgif/ezgif-frame-143.jpg
+ezgif/ezgif-frame-144.jpg
+ezgif/ezgif-frame-145.jpg
+ezgif/ezgif-frame-146.jpg
+ezgif/ezgif-frame-147.jpg
+ezgif/ezgif-frame-148.jpg
+ezgif/ezgif-frame-149.jpg
+ezgif/ezgif-frame-150.jpg
+ezgif/ezgif-frame-151.jpg
+ezgif/ezgif-frame-152.jpg
+ezgif/ezgif-frame-153.jpg
+ezgif/ezgif-frame-154.jpg
+ezgif/ezgif-frame-155.jpg
+ezgif/ezgif-frame-156.jpg
+ezgif/ezgif-frame-157.jpg
+ezgif/ezgif-frame-158.jpg
+ezgif/ezgif-frame-159.jpg
+ezgif/ezgif-frame-160.jpg
+ezgif/ezgif-frame-161.jpg
+ezgif/ezgif-frame-162.jpg
+ezgif/ezgif-frame-163.jpg
+ezgif/ezgif-frame-164.jpg
+ezgif/ezgif-frame-165.jpg
+ezgif/ezgif-frame-166.jpg
+ezgif/ezgif-frame-167.jpg
+ezgif/ezgif-frame-168.jpg
+ezgif/ezgif-frame-169.jpg
+ezgif/ezgif-frame-170.jpg
+ezgif/ezgif-frame-171.jpg
+ezgif/ezgif-frame-172.jpg
+ezgif/ezgif-frame-173.jpg
+ezgif/ezgif-frame-174.jpg
+ezgif/ezgif-frame-175.jpg
+ezgif/ezgif-frame-176.jpg
+ezgif/ezgif-frame-177.jpg
+ezgif/ezgif-frame-178.jpg
+ezgif/ezgif-frame-179.jpg
+ezgif/ezgif-frame-180.jpg
+ezgif/ezgif-frame-181.jpg
+ezgif/ezgif-frame-182.jpg
+ezgif/ezgif-frame-183.jpg
+ezgif/ezgif-frame-184.jpg
+ezgif/ezgif-frame-185.jpg
+ezgif/ezgif-frame-186.jpg
+ezgif/ezgif-frame-187.jpg
+ezgif/ezgif-frame-188.jpg
+ezgif/ezgif-frame-189.jpg
+ezgif/ezgif-frame-190.jpg
+ezgif/ezgif-frame-191.jpg
+ezgif/ezgif-frame-192.jpg
+ezgif/ezgif-frame-193.jpg
+ezgif/ezgif-frame-194.jpg
+ezgif/ezgif-frame-195.jpg
+ezgif/ezgif-frame-196.jpg
+ezgif/ezgif-frame-197.jpg
+ezgif/ezgif-frame-198.jpg
+ezgif/ezgif-frame-199.jpg
+ezgif/ezgif-frame-200.jpg
+ezgif/ezgif-frame-201.jpg
+ezgif/ezgif-frame-202.jpg
+ezgif/ezgif-frame-203.jpg
+ezgif/ezgif-frame-204.jpg
+ezgif/ezgif-frame-205.jpg
+ezgif/ezgif-frame-206.jpg
+ezgif/ezgif-frame-207.jpg
+ezgif/ezgif-frame-208.jpg
+ezgif/ezgif-frame-209.jpg
+ezgif/ezgif-frame-210.jpg
+ezgif/ezgif-frame-211.jpg
+ezgif/ezgif-frame-212.jpg
+ezgif/ezgif-frame-213.jpg
+ezgif/ezgif-frame-214.jpg
+ezgif/ezgif-frame-215.jpg
+ezgif/ezgif-frame-216.jpg
+ezgif/ezgif-frame-217.jpg
+ezgif/ezgif-frame-218.jpg
+ezgif/ezgif-frame-219.jpg
+ezgif/ezgif-frame-220.jpg
+ezgif/ezgif-frame-221.jpg
+ezgif/ezgif-frame-222.jpg
+ezgif/ezgif-frame-223.jpg
+ezgif/ezgif-frame-224.jpg
+ezgif/ezgif-frame-225.jpg
+ezgif/ezgif-frame-226.jpg
+ezgif/ezgif-frame-227.jpg
+ezgif/ezgif-frame-228.jpg
+ezgif/ezgif-frame-229.jpg
+ezgif/ezgif-frame-230.jpg
+ezgif/ezgif-frame-231.jpg
+ezgif/ezgif-frame-232.jpg
+ezgif/ezgif-frame-233.jpg
+ezgif/ezgif-frame-234.jpg
+ezgif/ezgif-frame-235.jpg
+ezgif/ezgif-frame-236.jpg
+ezgif/ezgif-frame-237.jpg
+ezgif/ezgif-frame-238.jpg
+ezgif/ezgif-frame-239.jpg
+ezgif/ezgif-frame-240.jpg
+FRONTEND_SYSTEM_DESIGN.md
+frontend/.git/COMMIT_EDITMSG
+frontend/.git/config
+frontend/.git/description
+frontend/.git/HEAD
+frontend/.git/hooks/applypatch-msg.sample
+frontend/.git/hooks/commit-msg.sample
+frontend/.git/hooks/fsmonitor-watchman.sample
+frontend/.git/hooks/post-update.sample
+frontend/.git/hooks/pre-applypatch.sample
+frontend/.git/hooks/pre-commit.sample
+frontend/.git/hooks/pre-merge-commit.sample
+frontend/.git/hooks/pre-push.sample
+frontend/.git/hooks/pre-rebase.sample
+frontend/.git/hooks/pre-receive.sample
+frontend/.git/hooks/prepare-commit-msg.sample
+frontend/.git/hooks/push-to-checkout.sample
+frontend/.git/hooks/sendemail-validate.sample
+frontend/.git/hooks/update.sample
+frontend/.git/index
+frontend/.git/info/exclude
+frontend/.git/logs/HEAD
+frontend/.git/logs/refs/heads/master
+frontend/.git/objects/00/4145cddf3f9db91b57b9cb596683c8eb420862
+frontend/.git/objects/00/a953052cd2d7b1e49e5cc9dfb40832ad6f0d01
+frontend/.git/objects/01/00c72f0c5604ccabb8158b0d41feedf67e8e4c
+frontend/.git/objects/01/df2e65c6a9ae78aa9fafd97be4a71abf129ad0
+frontend/.git/objects/02/0c9db5000947bbd71f13de396065cdadff4629
+frontend/.git/objects/02/44d530881d58536a5f9ed8bdb28d15b5c67f2e
+frontend/.git/objects/03/fa8bba3f00627374282ea9c67e930ac130b829
+frontend/.git/objects/05/e726d1b4201bc8c7716d2b058279676582e8c0
+frontend/.git/objects/07/1f344dd5ab86b973ab0cd11b235f825c987772
+frontend/.git/objects/07/318b4b7e5283035d46323f56ae64eab67c6096
+frontend/.git/objects/09/8e87afec6680b7aaaadcc9f00dab191962335e
+frontend/.git/objects/0a/2f4ff4b193ead0f3f2ebb743309baaa5a1a62b
+frontend/.git/objects/0a/b2f8a83a59ef52ab362292f554548ca3fae39c
+frontend/.git/objects/0a/fa4c3f2c0e1cd25839e9ecfb4ae7114c62a463
+frontend/.git/objects/0c/734072e1fd78d9cf76b41c75496a95144a99e5
+frontend/.git/objects/0c/9bdf6ffdb57db2bdb461d8cbc619676574e5ff
+frontend/.git/objects/0d/b4f843416d2604830e86915dd577c8426b087e
+frontend/.git/objects/0d/eea0c5389d78dfc015549a7a86ec80596dca98
+frontend/.git/objects/0e/d5fe3c467fd4db07ada56c60bbd663f2f703af
+frontend/.git/objects/0f/36af94cebae16e34965a606f41296ccf815872
+frontend/.git/objects/11/f9e7cc583999589c90989ffc1e2c803b985c2b
+frontend/.git/objects/12/40c72914ee422a94c603cd701193aec5e5ae79
+frontend/.git/objects/12/67f632009890de0080d2dc1625b9189b59f9b6
+frontend/.git/objects/13/69b32a03801264d46bfab4b4e7421e2c4ecf34
+frontend/.git/objects/13/db133711d7043612726af60ff5b0d54604d703
+frontend/.git/objects/14/4ccb30df3e4021fb7e9183b9f464e9a1fb604c
+frontend/.git/objects/14/e49ec63b305a93032e588d4a392a28e49b3941
+frontend/.git/objects/16/270e0db2a68b58059f64cb7ebde459789480ed
+frontend/.git/objects/16/ee02a37f8f780c322855f1acdb00c9fc7a9c19
+frontend/.git/objects/17/39c0443f8e4e78ba3209a8442f3e537df4a04b
+frontend/.git/objects/17/58dea97ed5b2c41e28612f313f76243f66efa4
+frontend/.git/objects/19/9cbd70198578af163f5ab9663b3c4231b1cb5b
+frontend/.git/objects/1b/155ddda01ee2b1df2e917499e854842570f286
+frontend/.git/objects/1b/813747694c68e0b419a279667ecf7dae24a145
+frontend/.git/objects/1b/ba2b0e1a6e79fb440b6c7284f0b92dbfb5cda0
+frontend/.git/objects/1b/bc96685b79c44bf92fe799f163599cde1a97c7
+frontend/.git/objects/1b/dc1d66ab5752bb8929bbb4ca0daee1df5f30da
+frontend/.git/objects/1c/7c3a8afb50e26170634cd13df3f5a60d2c4b46
+frontend/.git/objects/1f/fdf485fb18e4eac70b87c9daf2589d5ff5f241
+frontend/.git/objects/20/86d8a8fc3115c2dac05e8cea7f89c0e38c3316
+frontend/.git/objects/20/8b9afda0e3099116910eb9babe2055cf1255aa
+frontend/.git/objects/23/27f90be87b46e53a0ffedebda8807a83a02cb0
+frontend/.git/objects/23/9f45955d4cfbb83c8e93240c91f218ec346aad
+frontend/.git/objects/23/f9a99651113f35faff48ad3bf60f793164a5bc
+frontend/.git/objects/25/032ae95867a29f2dd9745f7e11b2e06f03f6b0
+frontend/.git/objects/25/bee5f163e97ccb050edef8ab11fe5357201c46
+frontend/.git/objects/26/155cf9f6e4a2144e97e7c86a1528fb59f53eb0
+frontend/.git/objects/28/610cbdcb06e7480824410c277e6f6db098d02c
+frontend/.git/objects/28/95b26083c34d272d6c104acebf69cf3e6ffca2
+frontend/.git/objects/28/e040926e1d6b6293ad150c3eeb751679064017
+frontend/.git/objects/28/ede53c7bc49e181d6f8fb73e13832617af94f5
+frontend/.git/objects/2a/c63e85f35ac5b268fcb7d2162f4890023707ff
+frontend/.git/objects/2e/447fa2166a7848076d8756bdaad16cb744948a
+frontend/.git/objects/2e/4eef4ef80cb73df09cc4c4436936599e65a6f2
+frontend/.git/objects/2f/378dc0c2cf050d8c55a0a1e737cbca0be7abf7
+frontend/.git/objects/30/008bdc9091abd8ef00b795c579ff683008a91f
+frontend/.git/objects/30/6f00fe8d51e34d8480fbcab4f01a99d40f408a
+frontend/.git/objects/34/840910469fc5033ae68c4e67dd5209bf02e66f
+frontend/.git/objects/35/18105267c425007d2baf2266c04dfbd1f4ae50
+frontend/.git/objects/37/29c1a5bdc6186ceffadfa826b5055aa5eabd48
+frontend/.git/objects/38/3dbf65398b739b6974b2956b7435547069f58e
+frontend/.git/objects/38/e4af77a485d21a85772e2a8a61dc64ab05ce86
+frontend/.git/objects/39/169855f16416f719bf9ff0bd7b0d713a260355
+frontend/.git/objects/3a/75efde78f7ae89377536cfeb039023b22c72a8
+frontend/.git/objects/3d/d6fcc54dc2cba6f57c9d41747aa64ad4a21c96
+frontend/.git/objects/3e/718ed0683fb28a1d7d050dba2c0447e391881d
+frontend/.git/objects/3f/028a2a6049ea72117eaee94acbe0d641c3949e
+frontend/.git/objects/3f/36f7c5c4cfb7fb3c745bfd7d38b2d21a8c441d
+frontend/.git/objects/3f/dd0f101a84b2933f821657753eb0b8decf07ff
+frontend/.git/objects/43/c994c2d3617f947bcb5adf1933e21dabe46bb5
+frontend/.git/objects/46/8f636e4b5cb4200a8176fa1ffa278738f5cc5b
+frontend/.git/objects/48/5a23d8e06973b8a4a4f6083fda99f302571fc4
+frontend/.git/objects/49/19214173519c9e6c0006a853b618c7aebd331d
+frontend/.git/objects/49/c42af775528533d51f751e70b376e0a236a4d5
+frontend/.git/objects/4a/36d0912a3bb1ccdeb05385260b2f939aea983d
+frontend/.git/objects/4a/e6ae76702de9ca28179b89b79be07882dd2752
+frontend/.git/objects/4b/66b3b93f9d11404fdb7c7614d43011cfce5a5b
+frontend/.git/objects/4c/0f3a53dad46ced9a22fb4947b53a2159850cad
+frontend/.git/objects/4c/a7f3837bd85a1360d2b157e7cc4ae8456efb70
+frontend/.git/objects/4f/2ea899e04353aacad45f7298faf321f191fdaf
+frontend/.git/objects/50/4bca2a3469e9462a2124d9a0c14af0004d67e5
+frontend/.git/objects/50/d5e12e8b8df0939c3614a5eda35c745ec2d322
+frontend/.git/objects/50/d8d804b1c5c1221f1cf03bc749648d08d2016d
+frontend/.git/objects/51/0089e14967229a6239a61ca4f152373787a56b
+frontend/.git/objects/51/74b28c565c285e3e312ec5178be64fbeca8398
+frontend/.git/objects/51/ceae578adb466d82cb08d3586251fbc8d8a349
+frontend/.git/objects/53/875235e935a2c6fd4ca75f174bad2978836619
+frontend/.git/objects/53/8d7e1e990dbbe40e688143c7aba55586435f2e
+frontend/.git/objects/53/babd8801a4b53c3290da8d2c1382ce29ef538b
+frontend/.git/objects/55/221927a165333df906aa17c3fc480dd027d8a9
+frontend/.git/objects/55/63e00ad7b3006e0fb35b303e9b6fbeedb328a3
+frontend/.git/objects/55/672eabecd545bd3cd6013d9472563d7837456f
+frontend/.git/objects/55/81d391c4b3d703a0c360db68c8aa175790a1b6
+frontend/.git/objects/55/84d1ed59ae171a4082201553a214f949b66a2c
+frontend/.git/objects/56/7f17b0d7c7fb662c16d4357dd74830caf2dccb
+frontend/.git/objects/58/76e4e6eff7ccd6e735d609637fb4ac85d4b394
+frontend/.git/objects/58/9869f68687b2f10f6040ba78e740c8bd20305a
+frontend/.git/objects/59/7f51f5bcc509c4548a6af3446df3c0723e32d4
+frontend/.git/objects/5c/e745db075df4391638141f077e95f9d2fd5614
+frontend/.git/objects/5d/75729b2c724a8287d4883b2a7cdc39a377832b
+frontend/.git/objects/5e/ab155adfe3947e4303dc33dfde7912abf0d217
+frontend/.git/objects/5e/f6a520780202a1d6addd833d800ccb1ecac0bb
+frontend/.git/objects/5f/2d7b1a96ef4c5cd4ec26b908eacdf93ba8f9ca
+frontend/.git/objects/5f/671bd996a12b60d441d30aa79376742e2b07e0
+frontend/.git/objects/61/6aefa7ee899f0a2e234a4c2d9e9765eef7ccf8
+frontend/.git/objects/61/e36849cf7cfa9f1f71b4a3964a4953e3e243d3
+frontend/.git/objects/64/4d75df1bff51157b3e13b29adca65f4aa7f16b
+frontend/.git/objects/64/5199a141f6332011d080a87840b611c566c0d9
+frontend/.git/objects/65/8acd6bbd048fc0ab6a8ee35c9f69c98ba95963
+frontend/.git/objects/66/e156612a02db9f438b3c362c6382009afa42d9
+frontend/.git/objects/66/f69ba67aa3baab811caf853c128a4e28cd7727
+frontend/.git/objects/6b/ad8f5be5e3d74df76e758ecf2d0a04c2b31893
+frontend/.git/objects/6d/6fb24888130d0dc463b342a0f20a213b1cde52
+frontend/.git/objects/6d/907d0ace9f00da50653bbccf316259908a0054
+frontend/.git/objects/70/eeb8401e8258aa591f0971d22dda0188abee04
+frontend/.git/objects/71/8d6fea4835ec2d246af9800eddb7ffb276240c
+frontend/.git/objects/73/0cdf54aa9bda585ce7e32f45a2202f19cfd18b
+frontend/.git/objects/73/17a8f58c3d1f78c8f3de8c91c0b18d6629b406
+frontend/.git/objects/74/8aa3eed093b8f5e3ad0462f84bcebfc0ed0626
+frontend/.git/objects/75/868c53f6edf9e3fc1863180bff46c571d94eb6
+frontend/.git/objects/76/d31a3022689da2cbf07218d0deec1dcffda0dd
+frontend/.git/objects/77/053960334e2e34dc584dea8019925c3b4ccca9
+frontend/.git/objects/78/3cbcbe606616c5050f558c536ed45dd520345d
+frontend/.git/objects/7f/5ccd08914ae02640db3e965f0b052e6165c040
+frontend/.git/objects/7f/63f67710b47dab7ed7f9da8c5f82c3c431fe3a
+frontend/.git/objects/80/6ade27309a108bdee2c481458184553da6f542
+frontend/.git/objects/81/ad69eb82126c57b100f52f59535c39525b60f6
+frontend/.git/objects/83/575886a84057de37bbee61d799cccefb3a91e0
+frontend/.git/objects/86/217fc0ce28f4535ae2b8f03a918e7978c95a94
+frontend/.git/objects/86/fe7f556cd6172204afc6dc2803d0f1f953b503
+frontend/.git/objects/87/fddeca7364828f82d998649244026b44454839
+frontend/.git/objects/8a/de514a2ba649dcc37216336f21059e32cc6ff8
+frontend/.git/objects/8b/d0e39085d5260e7f8faffcad2fdc45e10aef33
+frontend/.git/objects/8d/886db5756307e013bc8ae97c05220fb7b6ab7a
+frontend/.git/objects/8d/8e45a970d8a0d7f4f457e31aa45a913e4f1295
+frontend/.git/objects/8d/bae187ca3bc9fe49b9cd4fd7d61a6549eb3ce3
+frontend/.git/objects/8d/fb51922cec17f8b0450f17030c756a5295fa41
+frontend/.git/objects/8f/26536cadd14bcdc182a421aa4826f2cb2d6866
+frontend/.git/objects/90/ff63f783fcdf54f2fece391ca089c9658b59c8
+frontend/.git/objects/92/6bc4bb7f1cd91f7b77d79dfa10e138b93df3c7
+frontend/.git/objects/93/1f03a5c1ec4007fc930ebfcce19c19242d1c03
+frontend/.git/objects/94/2c918c2fb6af11056e50cfdb1f058e919aef9d
+frontend/.git/objects/94/623d1823d65d5414fe74add5d08357156fe62e
+frontend/.git/objects/94/dc811a4bf425460177a148c46c0a8baac50c12
+frontend/.git/objects/96/8523afaf017bf6e1b4e3ed3c6e12614f50ab7d
+frontend/.git/objects/97/3a9ed8539a22336f4f16803adc77fcef2c9b85
+frontend/.git/objects/97/6eb90df142ef2c4f3f39cee8b0e4c4f4771b62
+frontend/.git/objects/98/e410666f704fc88d898405d94d587507d96635
+frontend/.git/objects/9d/1513971eadaa46768550bc714a1c1674d7e94e
+frontend/.git/objects/9d/f06c7085b7f003036c5ab343868d51b8b26d2d
+frontend/.git/objects/9e/e54b107e874084c278f54585f8dbdc34291f59
+frontend/.git/objects/9e/f2cd14042d615075ee04178c478347f704878e
+frontend/.git/objects/a0/f1ea211b5994959c51c0d0fc71f53884455792
+frontend/.git/objects/a1/1d134b1503de2d01b3de79e48944e211b4038e
+frontend/.git/objects/a1/7d9e2c04649ae5ee1c12604a13e40340f055cd
+frontend/.git/objects/a2/6f6f952688f0f0a22907233421c83375e3ee53
+frontend/.git/objects/a3/b559a100b0bdf038ea54bf80b7c0fb2ff83ea6
+frontend/.git/objects/a3/d4a4f5d153b9669974619341bdaa743d03a578
+frontend/.git/objects/a3/f9a5090a718d36f7a688dd69c1e0094ffdec19
+frontend/.git/objects/a5/6e137f18e5f9b6093af122ccdaf34c3ebb05c9
+frontend/.git/objects/a6/172de5fdfd7c2e1943e2ce81b7456971d027bd
+frontend/.git/objects/a9/74446f9e38a09945573fec85126821e43c6584
+frontend/.git/objects/ad/65449c9cbefdbac4d04c354f413a4b1b94a8b9
+frontend/.git/objects/ae/cd583f8ce4c756b6a237ccbad53a76242dcba8
+frontend/.git/objects/b0/1f23659243d31db68a00fd4b31f804f57d6e2e
+frontend/.git/objects/b2/b2a44f6ebc70c450043c05a002e7a93ba5d651
+frontend/.git/objects/b3/4e41a6a45ebbf3d00f590b5a44e14950033a74
+frontend/.git/objects/b3/5ae76f0f2eddc112aad5dbe96d7d6bd32b2390
+frontend/.git/objects/b4/719e677e68cbd163568492d5e8ac9df281620d
+frontend/.git/objects/ba/cbb432e3db5ce12cca574bee62ae23ce7a2102
+frontend/.git/objects/bc/24ea66e361549aecba148d5660e7c886fc17a4
+frontend/.git/objects/bd/0c391ddd1088e9067844c48835bf4abcd61783
+frontend/.git/objects/be/28bc67c9bb6882521cb491f83cb3cfe19c991f
+frontend/.git/objects/be/aef0f43e159c738c31161d4317c08fc828bf3b
+frontend/.git/objects/c2/01b10aae48324e6d7f01147817fb59bb408c7f
+frontend/.git/objects/c5/1d865768ced408b6da97176d493884abafa3d4
+frontend/.git/objects/c5/6032b62ef11126fc66fdbf91f70d6170dec567
+frontend/.git/objects/c6/28c4117a0ca4c2c46129d324483992e2a6f30b
+frontend/.git/objects/c7/c86dc3ecfb7e6df7b41a712e025544c106bb57
+frontend/.git/objects/c8/8e7c7a8292aab9802a533ab0633c883a9d4400
+frontend/.git/objects/c8/f4cf21c2bc156264a9ed9780baad10a3694113
+frontend/.git/objects/c9/035348bf0d9b271ec3844aaf1e09e1f783dd34
+frontend/.git/objects/ca/6953ef2154f800abb04d7319a4ce9a017d37d5
+frontend/.git/objects/ca/9d561c11e9c70a8530e955a07bbd21db29b353
+frontend/.git/objects/cc/622626a7f6c3314ef3d4e509939c50b3c8557c
+frontend/.git/objects/cf/9c65d3e0676a0169374d827f7abb97497789ef
+frontend/.git/objects/cf/a3e9e89161da1536f9af6b0025dd3b1afdb615
+frontend/.git/objects/d0/c8d3ef1cad9a0cfbcdf05bd3270c8ae8c5364a
+frontend/.git/objects/d1/5f08aa4e8d5776a368b9dfc9075b56ce6bcf97
+frontend/.git/objects/d2/4b096375f103a990ddb53227934f4964801005
+frontend/.git/objects/d2/746ddf9770c75372c63d521b4df4dd8f351404
+frontend/.git/objects/d3/6dc70ec8a316c91dec4ec9657f36b05577b1d2
+frontend/.git/objects/d4/f0b99d73745e9bf864972aec4e202e96654e66
+frontend/.git/objects/d5/3575ef9009e699a04858b139c8be158238c138
+frontend/.git/objects/d7/1966758a5904bd574e5f8b817e3b547d33ddd7
+frontend/.git/objects/da/e8fff7ca6417feccde7fdba750cb41b1c775e5
+frontend/.git/objects/dd/4f78162888add564ad137c66c4c77ca708000a
+frontend/.git/objects/de/478bb4515e60a0f3c3839c17c1c97d91674d28
+frontend/.git/objects/e2/15bc4ccf138bbc38ad58ad57e92135484b3c0f
+frontend/.git/objects/e3/d7709a19457aecf9a9722f89900456f99038c1
+frontend/.git/objects/e4/94c9b7e6565e22a61bc6b59db7d6fa8521eecb
+frontend/.git/objects/e4/d1fcb4589f952b946d4aa5b5049cc64dd0acd1
+frontend/.git/objects/e8/65a650451664922a93b02b33a4755b9755c8d8
+frontend/.git/objects/ea/368c04685ba34ef222f3d3b07c35d18dc55a88
+frontend/.git/objects/eb/4705b4d7088e8f2e8d6045225fe71d6398942b
+frontend/.git/objects/ed/db87056884e9a9476298f8b9611fcd79d4fd5b
+frontend/.git/objects/f0/548959e03421a29e0a630d44b650bf266071e5
+frontend/.git/objects/f1/6dbda5fb0a9ca054d569c00907ccd09abe075e
+frontend/.git/objects/f1/8a8abcbb01d456c15fef5fd0b9e5daa11b0417
+frontend/.git/objects/f1/9931193a200bdd78a55936467bce514309a222
+frontend/.git/objects/f2/aa93c85ec11996127b64b274dc6650db45257f
+frontend/.git/objects/f2/f07f24f281bd96f918fd18a39ec3cf83cde3a0
+frontend/.git/objects/f3/96e8a643aec41956667a92b0952a19dddd4d2f
+frontend/.git/objects/f4/75b73b60933f7193cfe993ffd86dbad72895de
+frontend/.git/objects/f5/951852352c6aa7ca573f90d450e17be8184ce6
+frontend/.git/objects/f5/b3f931d62be7914e849dccaefc269f814987e6
+frontend/.git/objects/f6/3927c97a9297e67c2c7e41377547833d62fdef
+frontend/.git/objects/f6/8f1203036d38399543e6726de47b5fad37ea06
+frontend/.git/objects/f6/ff7f19d7a02b6d8920400d17e5d6b2412c8f5c
+frontend/.git/objects/f7/3a491f97679954209d0a6f953f129efe30a9e9
+frontend/.git/objects/f9/c706fbef7e4a297730e29c7a5cc0fedf69a683
+frontend/.git/objects/fa/c89487784cd5f0023e7bb45fb6c8888c1e70c4
+frontend/.git/objects/fc/7a9edfc4d90a1213c2c1b958c695abd0f55397
+frontend/.git/objects/fd/1d63be6308a023a36fe953d192655dad48d01d
+frontend/.git/objects/fe/a6d990dcacb7fb9e3a49386c5a2aebe7fb3021
+frontend/.git/refs/heads/master
+frontend/.gitignore
+frontend/AGENTS.md
+frontend/CLAUDE.md
+frontend/components.json
+frontend/eslint.config.mjs
+frontend/next.config.ts
+frontend/package.json
+frontend/postcss.config.mjs
+frontend/public/file.svg
+frontend/public/frames/ezgif-frame-001.jpg
+frontend/public/frames/ezgif-frame-002.jpg
+frontend/public/frames/ezgif-frame-003.jpg
+frontend/public/frames/ezgif-frame-004.jpg
+frontend/public/frames/ezgif-frame-005.jpg
+frontend/public/frames/ezgif-frame-006.jpg
+frontend/public/frames/ezgif-frame-007.jpg
+frontend/public/frames/ezgif-frame-008.jpg
+frontend/public/frames/ezgif-frame-009.jpg
+frontend/public/frames/ezgif-frame-010.jpg
+frontend/public/frames/ezgif-frame-011.jpg
+frontend/public/frames/ezgif-frame-012.jpg
+frontend/public/frames/ezgif-frame-013.jpg
+frontend/public/frames/ezgif-frame-014.jpg
+frontend/public/frames/ezgif-frame-015.jpg
+frontend/public/frames/ezgif-frame-016.jpg
+frontend/public/frames/ezgif-frame-017.jpg
+frontend/public/frames/ezgif-frame-018.jpg
+frontend/public/frames/ezgif-frame-019.jpg
+frontend/public/frames/ezgif-frame-020.jpg
+frontend/public/frames/ezgif-frame-021.jpg
+frontend/public/frames/ezgif-frame-022.jpg
+frontend/public/frames/ezgif-frame-023.jpg
+frontend/public/frames/ezgif-frame-024.jpg
+frontend/public/frames/ezgif-frame-025.jpg
+frontend/public/frames/ezgif-frame-026.jpg
+frontend/public/frames/ezgif-frame-027.jpg
+frontend/public/frames/ezgif-frame-028.jpg
+frontend/public/frames/ezgif-frame-029.jpg
+frontend/public/frames/ezgif-frame-030.jpg
+frontend/public/frames/ezgif-frame-031.jpg
+frontend/public/frames/ezgif-frame-032.jpg
+frontend/public/frames/ezgif-frame-033.jpg
+frontend/public/frames/ezgif-frame-034.jpg
+frontend/public/frames/ezgif-frame-035.jpg
+frontend/public/frames/ezgif-frame-036.jpg
+frontend/public/frames/ezgif-frame-037.jpg
+frontend/public/frames/ezgif-frame-038.jpg
+frontend/public/frames/ezgif-frame-039.jpg
+frontend/public/frames/ezgif-frame-040.jpg
+frontend/public/frames/ezgif-frame-041.jpg
+frontend/public/frames/ezgif-frame-042.jpg
+frontend/public/frames/ezgif-frame-043.jpg
+frontend/public/frames/ezgif-frame-044.jpg
+frontend/public/frames/ezgif-frame-045.jpg
+frontend/public/frames/ezgif-frame-046.jpg
+frontend/public/frames/ezgif-frame-047.jpg
+frontend/public/frames/ezgif-frame-048.jpg
+frontend/public/frames/ezgif-frame-049.jpg
+frontend/public/frames/ezgif-frame-050.jpg
+frontend/public/frames/ezgif-frame-051.jpg
+frontend/public/frames/ezgif-frame-052.jpg
+frontend/public/frames/ezgif-frame-053.jpg
+frontend/public/frames/ezgif-frame-054.jpg
+frontend/public/frames/ezgif-frame-055.jpg
+frontend/public/frames/ezgif-frame-056.jpg
+frontend/public/frames/ezgif-frame-057.jpg
+frontend/public/frames/ezgif-frame-058.jpg
+frontend/public/frames/ezgif-frame-059.jpg
+frontend/public/frames/ezgif-frame-060.jpg
+frontend/public/frames/ezgif-frame-061.jpg
+frontend/public/frames/ezgif-frame-062.jpg
+frontend/public/frames/ezgif-frame-063.jpg
+frontend/public/frames/ezgif-frame-064.jpg
+frontend/public/frames/ezgif-frame-065.jpg
+frontend/public/frames/ezgif-frame-066.jpg
+frontend/public/frames/ezgif-frame-067.jpg
+frontend/public/frames/ezgif-frame-068.jpg
+frontend/public/frames/ezgif-frame-069.jpg
+frontend/public/frames/ezgif-frame-070.jpg
+frontend/public/frames/ezgif-frame-071.jpg
+frontend/public/frames/ezgif-frame-072.jpg
+frontend/public/frames/ezgif-frame-073.jpg
+frontend/public/frames/ezgif-frame-074.jpg
+frontend/public/frames/ezgif-frame-075.jpg
+frontend/public/frames/ezgif-frame-076.jpg
+frontend/public/frames/ezgif-frame-077.jpg
+frontend/public/frames/ezgif-frame-078.jpg
+frontend/public/frames/ezgif-frame-079.jpg
+frontend/public/frames/ezgif-frame-080.jpg
+frontend/public/frames/ezgif-frame-081.jpg
+frontend/public/frames/ezgif-frame-082.jpg
+frontend/public/frames/ezgif-frame-083.jpg
+frontend/public/frames/ezgif-frame-084.jpg
+frontend/public/frames/ezgif-frame-085.jpg
+frontend/public/frames/ezgif-frame-086.jpg
+frontend/public/frames/ezgif-frame-087.jpg
+frontend/public/frames/ezgif-frame-088.jpg
+frontend/public/frames/ezgif-frame-089.jpg
+frontend/public/frames/ezgif-frame-090.jpg
+frontend/public/frames/ezgif-frame-091.jpg
+frontend/public/frames/ezgif-frame-092.jpg
+frontend/public/frames/ezgif-frame-093.jpg
+frontend/public/frames/ezgif-frame-094.jpg
+frontend/public/frames/ezgif-frame-095.jpg
+frontend/public/frames/ezgif-frame-096.jpg
+frontend/public/frames/ezgif-frame-097.jpg
+frontend/public/frames/ezgif-frame-098.jpg
+frontend/public/frames/ezgif-frame-099.jpg
+frontend/public/frames/ezgif-frame-100.jpg
+frontend/public/frames/ezgif-frame-101.jpg
+frontend/public/frames/ezgif-frame-102.jpg
+frontend/public/frames/ezgif-frame-103.jpg
+frontend/public/frames/ezgif-frame-104.jpg
+frontend/public/frames/ezgif-frame-105.jpg
+frontend/public/frames/ezgif-frame-106.jpg
+frontend/public/frames/ezgif-frame-107.jpg
+frontend/public/frames/ezgif-frame-108.jpg
+frontend/public/frames/ezgif-frame-109.jpg
+frontend/public/frames/ezgif-frame-110.jpg
+frontend/public/frames/ezgif-frame-111.jpg
+frontend/public/frames/ezgif-frame-112.jpg
+frontend/public/frames/ezgif-frame-113.jpg
+frontend/public/frames/ezgif-frame-114.jpg
+frontend/public/frames/ezgif-frame-115.jpg
+frontend/public/frames/ezgif-frame-116.jpg
+frontend/public/frames/ezgif-frame-117.jpg
+frontend/public/frames/ezgif-frame-118.jpg
+frontend/public/frames/ezgif-frame-119.jpg
+frontend/public/frames/ezgif-frame-120.jpg
+frontend/public/frames/ezgif-frame-121.jpg
+frontend/public/frames/ezgif-frame-122.jpg
+frontend/public/frames/ezgif-frame-123.jpg
+frontend/public/frames/ezgif-frame-124.jpg
+frontend/public/frames/ezgif-frame-125.jpg
+frontend/public/frames/ezgif-frame-126.jpg
+frontend/public/frames/ezgif-frame-127.jpg
+frontend/public/frames/ezgif-frame-128.jpg
+frontend/public/frames/ezgif-frame-129.jpg
+frontend/public/frames/ezgif-frame-130.jpg
+frontend/public/frames/ezgif-frame-131.jpg
+frontend/public/frames/ezgif-frame-132.jpg
+frontend/public/frames/ezgif-frame-133.jpg
+frontend/public/frames/ezgif-frame-134.jpg
+frontend/public/frames/ezgif-frame-135.jpg
+frontend/public/frames/ezgif-frame-136.jpg
+frontend/public/frames/ezgif-frame-137.jpg
+frontend/public/frames/ezgif-frame-138.jpg
+frontend/public/frames/ezgif-frame-139.jpg
+frontend/public/frames/ezgif-frame-140.jpg
+frontend/public/frames/ezgif-frame-141.jpg
+frontend/public/frames/ezgif-frame-142.jpg
+frontend/public/frames/ezgif-frame-143.jpg
+frontend/public/frames/ezgif-frame-144.jpg
+frontend/public/frames/ezgif-frame-145.jpg
+frontend/public/frames/ezgif-frame-146.jpg
+frontend/public/frames/ezgif-frame-147.jpg
+frontend/public/frames/ezgif-frame-148.jpg
+frontend/public/frames/ezgif-frame-149.jpg
+frontend/public/frames/ezgif-frame-150.jpg
+frontend/public/frames/ezgif-frame-151.jpg
+frontend/public/frames/ezgif-frame-152.jpg
+frontend/public/frames/ezgif-frame-153.jpg
+frontend/public/frames/ezgif-frame-154.jpg
+frontend/public/frames/ezgif-frame-155.jpg
+frontend/public/frames/ezgif-frame-156.jpg
+frontend/public/frames/ezgif-frame-157.jpg
+frontend/public/frames/ezgif-frame-158.jpg
+frontend/public/frames/ezgif-frame-159.jpg
+frontend/public/frames/ezgif-frame-160.jpg
+frontend/public/frames/ezgif-frame-161.jpg
+frontend/public/frames/ezgif-frame-162.jpg
+frontend/public/frames/ezgif-frame-163.jpg
+frontend/public/frames/ezgif-frame-164.jpg
+frontend/public/frames/ezgif-frame-165.jpg
+frontend/public/frames/ezgif-frame-166.jpg
+frontend/public/frames/ezgif-frame-167.jpg
+frontend/public/frames/ezgif-frame-168.jpg
+frontend/public/frames/ezgif-frame-169.jpg
+frontend/public/frames/ezgif-frame-170.jpg
+frontend/public/frames/ezgif-frame-171.jpg
+frontend/public/frames/ezgif-frame-172.jpg
+frontend/public/frames/ezgif-frame-173.jpg
+frontend/public/frames/ezgif-frame-174.jpg
+frontend/public/frames/ezgif-frame-175.jpg
+frontend/public/frames/ezgif-frame-176.jpg
+frontend/public/frames/ezgif-frame-177.jpg
+frontend/public/frames/ezgif-frame-178.jpg
+frontend/public/frames/ezgif-frame-179.jpg
+frontend/public/frames/ezgif-frame-180.jpg
+frontend/public/frames/ezgif-frame-181.jpg
+frontend/public/frames/ezgif-frame-182.jpg
+frontend/public/frames/ezgif-frame-183.jpg
+frontend/public/frames/ezgif-frame-184.jpg
+frontend/public/frames/ezgif-frame-185.jpg
+frontend/public/frames/ezgif-frame-186.jpg
+frontend/public/frames/ezgif-frame-187.jpg
+frontend/public/frames/ezgif-frame-188.jpg
+frontend/public/frames/ezgif-frame-189.jpg
+frontend/public/frames/ezgif-frame-190.jpg
+frontend/public/frames/ezgif-frame-191.jpg
+frontend/public/frames/ezgif-frame-192.jpg
+frontend/public/frames/ezgif-frame-193.jpg
+frontend/public/frames/ezgif-frame-194.jpg
+frontend/public/frames/ezgif-frame-195.jpg
+frontend/public/frames/ezgif-frame-196.jpg
+frontend/public/frames/ezgif-frame-197.jpg
+frontend/public/frames/ezgif-frame-198.jpg
+frontend/public/frames/ezgif-frame-199.jpg
+frontend/public/frames/ezgif-frame-200.jpg
+frontend/public/frames/ezgif-frame-201.jpg
+frontend/public/frames/ezgif-frame-202.jpg
+frontend/public/frames/ezgif-frame-203.jpg
+frontend/public/frames/ezgif-frame-204.jpg
+frontend/public/frames/ezgif-frame-205.jpg
+frontend/public/frames/ezgif-frame-206.jpg
+frontend/public/frames/ezgif-frame-207.jpg
+frontend/public/frames/ezgif-frame-208.jpg
+frontend/public/frames/ezgif-frame-209.jpg
+frontend/public/frames/ezgif-frame-210.jpg
+frontend/public/frames/ezgif-frame-211.jpg
+frontend/public/frames/ezgif-frame-212.jpg
+frontend/public/frames/ezgif-frame-213.jpg
+frontend/public/frames/ezgif-frame-214.jpg
+frontend/public/frames/ezgif-frame-215.jpg
+frontend/public/frames/ezgif-frame-216.jpg
+frontend/public/frames/ezgif-frame-217.jpg
+frontend/public/frames/ezgif-frame-218.jpg
+frontend/public/frames/ezgif-frame-219.jpg
+frontend/public/frames/ezgif-frame-220.jpg
+frontend/public/frames/ezgif-frame-221.jpg
+frontend/public/frames/ezgif-frame-222.jpg
+frontend/public/frames/ezgif-frame-223.jpg
+frontend/public/frames/ezgif-frame-224.jpg
+frontend/public/frames/ezgif-frame-225.jpg
+frontend/public/frames/ezgif-frame-226.jpg
+frontend/public/frames/ezgif-frame-227.jpg
+frontend/public/frames/ezgif-frame-228.jpg
+frontend/public/frames/ezgif-frame-229.jpg
+frontend/public/frames/ezgif-frame-230.jpg
+frontend/public/frames/ezgif-frame-231.jpg
+frontend/public/frames/ezgif-frame-232.jpg
+frontend/public/frames/ezgif-frame-233.jpg
+frontend/public/frames/ezgif-frame-234.jpg
+frontend/public/frames/ezgif-frame-235.jpg
+frontend/public/frames/ezgif-frame-236.jpg
+frontend/public/frames/ezgif-frame-237.jpg
+frontend/public/frames/ezgif-frame-238.jpg
+frontend/public/frames/ezgif-frame-239.jpg
+frontend/public/frames/ezgif-frame-240.jpg
+frontend/public/globe.svg
+frontend/public/logo.png
+frontend/public/next.svg
+frontend/public/vercel.svg
+frontend/public/window.svg
+frontend/README.md
+frontend/src/app/favicon.ico
+frontend/src/app/globals.css
+frontend/src/app/layout.tsx
+frontend/src/app/page.tsx
+frontend/src/app/why-equis/page.tsx
+frontend/src/components/Footer.tsx
+frontend/src/components/Navbar.tsx
+frontend/src/components/ScrollImageSequence.tsx
+frontend/src/components/ui/blur-text-animation.tsx
+frontend/src/components/ui/button.tsx
+frontend/tsconfig.json
+ML_ARCHITECTURE.md
+README.md
+render.yaml
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="FRONTEND_SYSTEM_DESIGN.md">
+# 🎨 David Protocol — Frontend System Design & API Mapping
+
+This document outlines the end-to-end user journey, UI architecture, and exact API mapping required to build the David Protocol frontend.
+
+---
+
+## 🗺️ User Journey Flowchart
+
+```mermaid
+graph TD
+    A[Landing Page] -->|Click Get Started| B[Register/Login]
+    B -->|Success| C[Onboarding: Link Bank]
+    C -->|Plaid Success| D[Dashboard: Processing]
+    D -->|Auto-Sync| E[Dashboard: Financial Score]
+    E -->|Click Details| F[Deep Dive: Explainability & Metrics]
+```
+
+---
+
+## 📄 Page-by-Page Input/Output Cycle
+
+### 1. Landing Page (The "Wow" Factor)
+- **Role**: High-conversion professional landing page.
+- **Input**: None (Static).
+- **CTA**: "Check My Resilience" button → Redirects to `/register`.
+
+### 2. Auth Page (Login/Register)
+- **Input**: `email`, `password`.
+- **API Mapping**: `POST /auth/register` (already implemented).
+- **Logic**: Store the returned `user_id` in LocalStorage or a Global State.
+- **Output**: Redirect to `/link-bank`.
+
+### 3. Onboarding Page (Link Bank)
+- **Role**: Bridge to Plaid.
+- **Cycle**:
+  1. **Frontend** calls `POST /plaid/create_link_token?user_id={id}`.
+  2. **Backend** returns `link_token`.
+  3. **Frontend** initializes Plaid Link SDK with the token.
+  4. **Plaid** returns `public_token` on success.
+  5. **Frontend** calls `POST /plaid/exchange_public_token` with `{public_token, user_id}`.
+- **Output**: Redirect to `/dashboard`.
+
+### 4. Dashboard (The Core Product)
+- **Initial State**: Show a "Syncing your financial data..." loader.
+- **Action**: Call `POST /scoring/process/{user_id}` on mount.
+- **Background Loop**:
+  - While processing, show micro-animations.
+  - On success, the API returns the full `score`, `decision`, and `explanation`.
+- **UI Components**:
+  - **Radial Gauge**: Visualizing the score (0-1000).
+  - **Metric Cards**: Income, Rent Ratio, Savings Rate.
+  - **Explainability Panel**: Render the Markdown `explanation` string from the backend.
+
+---
+
+## 🔌 API Documentation for Frontend
+
+| Feature | Endpoint | Method | Params (JSON) | Success Response (200) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Signup** | `/auth/register` | `POST` | `email`, `password` | `{id: 1, email: "..."}` |
+| **Plaid Link** | `/plaid/create_link_token` | `POST` | `user_id` (Query) | `{link_token: "..."}` |
+| **Plaid Token**| `/plaid/exchange_public_token` | `POST` | `public_token`, `user_id` | `{status: "success"}` |
+| **Get Score** | `/scoring/process/{id}` | `POST` | None | `{score: 850, decision: "APPROVE", ...}` |
+| **History** | `/scoring/status/{id}` | `GET` | None | `{score: 850, calculated_at: "..."}` |
+
+---
+
+## 🛡️ Sequence Diagram: The Scoring Cycle
+
+```mermaid
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant Backend
+    participant Plaid
+
+    User->>Frontend: Clicks "Analyze Account"
+    Frontend->>Backend: POST /plaid/create_link_token
+    Backend-->>Frontend: link_token
+    Frontend->>Plaid: Open Plaid Link UI
+    Plaid-->>User: Auth with Bank
+    User-->>Plaid: Success
+    Plaid-->>Frontend: public_token
+    Frontend->>Backend: POST /plaid/exchange_public_token
+    Backend-->>Frontend: { status: "success" }
+    
+    Note over Frontend,Backend: Now we trigger the AI Pipeline
+    
+    Frontend->>Backend: POST /scoring/process/{user_id}
+    Backend->>Plaid: Fetch Transactions (90 days)
+    Plaid-->>Backend: Raw Data
+    Backend->>Backend: NLP Categorization + ML Scoring
+    Backend-->>Frontend: { score: 780, explanation: "..." }
+    Frontend-->>User: Display Radial Gauge & Insights
+```
+
+---
+
+## 🎨 UI/UX Theme (Premium Aesthetic)
+- **Colors**: Deep Navy (`#0A192F`), Stellar Green (`#64FFDA`), Slate Gray (`#8892B0`) for text.
+- **Typography**: Inter (Google Fonts) for readability, Outfit for headers.
+- **Effects**: Glassmorphism on Dashboard cards, Subtle gradients behind the Gauge.
+
+---
+👉 **[Go back to Backend Docs](file:///d:/PROJECTS/stellaris%20hackathon/david_protocol_backend_architecture.md)**
+</file>
+
+<file path="frontend/.git/COMMIT_EDITMSG">
+feat: initial commit
+</file>
+
+<file path="frontend/.git/config">
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+</file>
+
+<file path="frontend/.git/description">
+Unnamed repository; edit this file 'description' to name the repository.
+</file>
+
+<file path="frontend/.git/HEAD">
+ref: refs/heads/master
+</file>
+
+<file path="frontend/.git/hooks/applypatch-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.  The hook is
+# allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "applypatch-msg".
+
+. git-sh-setup
+commitmsg="$(git rev-parse --git-path hooks/commit-msg)"
+test -x "$commitmsg" && exec "$commitmsg" ${1+"$@"}
+:
+</file>
+
+<file path="frontend/.git/hooks/commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to check the commit log message.
+# Called by "git commit" with one argument, the name of the file
+# that has the commit message.  The hook should exit with non-zero
+# status after issuing an appropriate message if it wants to stop the
+# commit.  The hook is allowed to edit the commit message file.
+#
+# To enable this hook, rename this file to "commit-msg".
+
+# Uncomment the below to add a Signed-off-by line to the message.
+# Doing this in a hook is a bad idea in general, but the prepare-commit-msg
+# hook is more suited to it.
+#
+# SOB=$(git var GIT_AUTHOR_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# grep -qs "^$SOB" "$1" || echo "$SOB" >> "$1"
+
+# This example catches duplicate Signed-off-by lines.
+
+test "" = "$(grep '^Signed-off-by: ' "$1" |
+	 sort | uniq -c | sed -e '/^[ 	]*1[ 	]/d')" || {
+	echo >&2 Duplicate Signed-off-by lines.
+	exit 1
+}
+</file>
+
+<file path="frontend/.git/hooks/fsmonitor-watchman.sample">
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use IPC::Open2;
+
+# An example hook script to integrate Watchman
+# (https://facebook.github.io/watchman/) with git to speed up detecting
+# new and modified files.
+#
+# The hook is passed a version (currently 2) and last update token
+# formatted as a string and outputs to stdout a new update token and
+# all files that have been modified since the update token. Paths must
+# be relative to the root of the working tree and separated by a single NUL.
+#
+# To enable this hook, rename this file to "query-watchman" and set
+# 'git config core.fsmonitor .git/hooks/query-watchman'
+#
+my ($version, $last_update_token) = @ARGV;
+
+# Uncomment for debugging
+# print STDERR "$0 $version $last_update_token\n";
+
+# Check the hook interface version
+if ($version ne 2) {
+	die "Unsupported query-fsmonitor hook version '$version'.\n" .
+	    "Falling back to scanning...\n";
+}
+
+my $git_work_tree = get_working_dir();
+
+my $retry = 1;
+
+my $json_pkg;
+eval {
+	require JSON::XS;
+	$json_pkg = "JSON::XS";
+	1;
+} or do {
+	require JSON::PP;
+	$json_pkg = "JSON::PP";
+};
+
+launch_watchman();
+
+sub launch_watchman {
+	my $o = watchman_query();
+	if (is_work_tree_watched($o)) {
+		output_result($o->{clock}, @{$o->{files}});
+	}
+}
+
+sub output_result {
+	my ($clockid, @files) = @_;
+
+	# Uncomment for debugging watchman output
+	# open (my $fh, ">", ".git/watchman-output.out");
+	# binmode $fh, ":utf8";
+	# print $fh "$clockid\n@files\n";
+	# close $fh;
+
+	binmode STDOUT, ":utf8";
+	print $clockid;
+	print "\0";
+	local $, = "\0";
+	print @files;
+}
+
+sub watchman_clock {
+	my $response = qx/watchman clock "$git_work_tree"/;
+	die "Failed to get clock id on '$git_work_tree'.\n" .
+		"Falling back to scanning...\n" if $? != 0;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub watchman_query {
+	my $pid = open2(\*CHLD_OUT, \*CHLD_IN, 'watchman -j --no-pretty')
+	or die "open2() failed: $!\n" .
+	"Falling back to scanning...\n";
+
+	# In the query expression below we're asking for names of files that
+	# changed since $last_update_token but not from the .git folder.
+	#
+	# To accomplish this, we're using the "since" generator to use the
+	# recency index to select candidate nodes and "fields" to limit the
+	# output to file names only. Then we're using the "expression" term to
+	# further constrain the results.
+	my $last_update_line = "";
+	if (substr($last_update_token, 0, 1) eq "c") {
+		$last_update_token = "\"$last_update_token\"";
+		$last_update_line = qq[\n"since": $last_update_token,];
+	}
+	my $query = <<"	END";
+		["query", "$git_work_tree", {$last_update_line
+			"fields": ["name"],
+			"expression": ["not", ["dirname", ".git"]]
+		}]
+	END
+
+	# Uncomment for debugging the watchman query
+	# open (my $fh, ">", ".git/watchman-query.json");
+	# print $fh $query;
+	# close $fh;
+
+	print CHLD_IN $query;
+	close CHLD_IN;
+	my $response = do {local $/; <CHLD_OUT>};
+
+	# Uncomment for debugging the watch response
+	# open ($fh, ">", ".git/watchman-response.json");
+	# print $fh $response;
+	# close $fh;
+
+	die "Watchman: command returned no output.\n" .
+	"Falling back to scanning...\n" if $response eq "";
+	die "Watchman: command returned invalid output: $response\n" .
+	"Falling back to scanning...\n" unless $response =~ /^\{/;
+
+	return $json_pkg->new->utf8->decode($response);
+}
+
+sub is_work_tree_watched {
+	my ($output) = @_;
+	my $error = $output->{error};
+	if ($retry > 0 and $error and $error =~ m/unable to resolve root .* directory (.*) is not watched/) {
+		$retry--;
+		my $response = qx/watchman watch "$git_work_tree"/;
+		die "Failed to make watchman watch '$git_work_tree'.\n" .
+		    "Falling back to scanning...\n" if $? != 0;
+		$output = $json_pkg->new->utf8->decode($response);
+		$error = $output->{error};
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		# Uncomment for debugging watchman output
+		# open (my $fh, ">", ".git/watchman-output.out");
+		# close $fh;
+
+		# Watchman will always return all files on the first query so
+		# return the fast "everything is dirty" flag to git and do the
+		# Watchman query just to get it over with now so we won't pay
+		# the cost in git to look up each individual file.
+		my $o = watchman_clock();
+		$error = $output->{error};
+
+		die "Watchman: $error.\n" .
+		"Falling back to scanning...\n" if $error;
+
+		output_result($o->{clock}, ("/"));
+		$last_update_token = $o->{clock};
+
+		eval { launch_watchman() };
+		return 0;
+	}
+
+	die "Watchman: $error.\n" .
+	"Falling back to scanning...\n" if $error;
+
+	return 1;
+}
+
+sub get_working_dir {
+	my $working_dir;
+	if ($^O =~ 'msys' || $^O =~ 'cygwin') {
+		$working_dir = Win32::GetCwd();
+		$working_dir =~ tr/\\/\//;
+	} else {
+		require Cwd;
+		$working_dir = Cwd::cwd();
+	}
+
+	return $working_dir;
+}
+</file>
+
+<file path="frontend/.git/hooks/post-update.sample">
+#!/bin/sh
+#
+# An example hook script to prepare a packed repository for use over
+# dumb transports.
+#
+# To enable this hook, rename this file to "post-update".
+
+exec git update-server-info
+</file>
+
+<file path="frontend/.git/hooks/pre-applypatch.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed
+# by applypatch from an e-mail message.
+#
+# The hook should exit with non-zero status after issuing an
+# appropriate message if it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-applypatch".
+
+. git-sh-setup
+precommit="$(git rev-parse --git-path hooks/pre-commit)"
+test -x "$precommit" && exec "$precommit" ${1+"$@"}
+:
+</file>
+
+<file path="frontend/.git/hooks/pre-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+# To enable this hook, rename this file to "pre-commit".
+
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+	against=HEAD
+else
+	# Initial commit: diff against an empty tree object
+	against=$(git hash-object -t tree /dev/null)
+fi
+
+# If you want to allow non-ASCII filenames set this variable to true.
+allownonascii=$(git config --type=bool hooks.allownonascii)
+
+# Redirect output to stderr.
+exec 1>&2
+
+# Cross platform projects tend to avoid non-ASCII filenames; prevent
+# them from being added to the repository. We exploit the fact that the
+# printable range starts at the space character and ends with tilde.
+if [ "$allownonascii" != "true" ] &&
+	# Note that the use of brackets around a tr range is ok here, (it's
+	# even required, for portability to Solaris 10's /usr/bin/tr), since
+	# the square bracket bytes happen to fall in the designated range.
+	test $(git diff-index --cached --name-only --diff-filter=A -z $against |
+	  LC_ALL=C tr -d '[ -~]\0' | wc -c) != 0
+then
+	cat <<\EOF
+Error: Attempt to add a non-ASCII file name.
+
+This can cause problems if you want to work with people on other platforms.
+
+To be portable it is advisable to rename the file.
+
+If you know what you are doing you can disable this check using:
+
+  git config hooks.allownonascii true
+EOF
+	exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
+</file>
+
+<file path="frontend/.git/hooks/pre-merge-commit.sample">
+#!/bin/sh
+#
+# An example hook script to verify what is about to be committed.
+# Called by "git merge" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message to
+# stderr if it wants to stop the merge commit.
+#
+# To enable this hook, rename this file to "pre-merge-commit".
+
+. git-sh-setup
+test -x "$GIT_DIR/hooks/pre-commit" &&
+        exec "$GIT_DIR/hooks/pre-commit"
+:
+</file>
+
+<file path="frontend/.git/hooks/pre-push.sample">
+#!/bin/sh
+
+# An example hook script to verify what is about to be pushed.  Called by "git
+# push" after it has checked the remote status, but before anything has been
+# pushed.  If this script exits with a non-zero status nothing will be pushed.
+#
+# This hook is called with the following parameters:
+#
+# $1 -- Name of the remote to which the push is being done
+# $2 -- URL to which the push is being done
+#
+# If pushing without using a named remote those arguments will be equal.
+#
+# Information about the commits which are being pushed is supplied as lines to
+# the standard input in the form:
+#
+#   <local ref> <local oid> <remote ref> <remote oid>
+#
+# This sample shows how to prevent push of commits where the log message starts
+# with "WIP" (work in progress).
+
+remote="$1"
+url="$2"
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+
+while read local_ref local_oid remote_ref remote_oid
+do
+	if test "$local_oid" = "$zero"
+	then
+		# Handle delete
+		:
+	else
+		if test "$remote_oid" = "$zero"
+		then
+			# New branch, examine all commits
+			range="$local_oid"
+		else
+			# Update to existing branch, examine new commits
+			range="$remote_oid..$local_oid"
+		fi
+
+		# Check for WIP commit
+		commit=$(git rev-list -n 1 --grep '^WIP' "$range")
+		if test -n "$commit"
+		then
+			echo >&2 "Found WIP commit in $local_ref, not pushing"
+			exit 1
+		fi
+	fi
+done
+
+exit 0
+</file>
+
+<file path="frontend/.git/hooks/pre-rebase.sample">
+#!/bin/sh
+#
+# Copyright (c) 2006, 2008 Junio C Hamano
+#
+# The "pre-rebase" hook is run just before "git rebase" starts doing
+# its job, and can prevent the command from running by exiting with
+# non-zero status.
+#
+# The hook is called with the following parameters:
+#
+# $1 -- the upstream the series was forked from.
+# $2 -- the branch being rebased (or empty when rebasing the current branch).
+#
+# This sample shows how to prevent topic branches that are already
+# merged to 'next' branch from getting rebased, because allowing it
+# would result in rebasing already published history.
+
+publish=next
+basebranch="$1"
+if test "$#" = 2
+then
+	topic="refs/heads/$2"
+else
+	topic=`git symbolic-ref HEAD` ||
+	exit 0 ;# we do not interrupt rebasing detached HEAD
+fi
+
+case "$topic" in
+refs/heads/??/*)
+	;;
+*)
+	exit 0 ;# we do not interrupt others.
+	;;
+esac
+
+# Now we are dealing with a topic branch being rebased
+# on top of master.  Is it OK to rebase it?
+
+# Does the topic really exist?
+git show-ref -q "$topic" || {
+	echo >&2 "No such branch $topic"
+	exit 1
+}
+
+# Is topic fully merged to master?
+not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+if test -z "$not_in_master"
+then
+	echo >&2 "$topic is fully merged to master; better remove it."
+	exit 1 ;# we could allow it, but there is no point.
+fi
+
+# Is topic ever merged to next?  If so you should not be rebasing it.
+only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+only_next_2=`git rev-list ^master           ${publish} | sort`
+if test "$only_next_1" = "$only_next_2"
+then
+	not_in_topic=`git rev-list "^$topic" master`
+	if test -z "$not_in_topic"
+	then
+		echo >&2 "$topic is already up to date with master"
+		exit 1 ;# we could allow it, but there is no point.
+	else
+		exit 0
+	fi
+else
+	not_in_next=`git rev-list --pretty=oneline ^${publish} "$topic"`
+	/usr/bin/perl -e '
+		my $topic = $ARGV[0];
+		my $msg = "* $topic has commits already merged to public branch:\n";
+		my (%not_in_next) = map {
+			/^([0-9a-f]+) /;
+			($1 => 1);
+		} split(/\n/, $ARGV[1]);
+		for my $elem (map {
+				/^([0-9a-f]+) (.*)$/;
+				[$1 => $2];
+			} split(/\n/, $ARGV[2])) {
+			if (!exists $not_in_next{$elem->[0]}) {
+				if ($msg) {
+					print STDERR $msg;
+					undef $msg;
+				}
+				print STDERR " $elem->[1]\n";
+			}
+		}
+	' "$topic" "$not_in_next" "$not_in_master"
+	exit 1
+fi
+
+<<\DOC_END
+
+This sample hook safeguards topic branches that have been
+published from being rewound.
+
+The workflow assumed here is:
+
+ * Once a topic branch forks from "master", "master" is never
+   merged into it again (either directly or indirectly).
+
+ * Once a topic branch is fully cooked and merged into "master",
+   it is deleted.  If you need to build on top of it to correct
+   earlier mistakes, a new topic branch is created by forking at
+   the tip of the "master".  This is not strictly necessary, but
+   it makes it easier to keep your history simple.
+
+ * Whenever you need to test or publish your changes to topic
+   branches, merge them into "next" branch.
+
+The script, being an example, hardcodes the publish branch name
+to be "next", but it is trivial to make it configurable via
+$GIT_DIR/config mechanism.
+
+With this workflow, you would want to know:
+
+(1) ... if a topic branch has ever been merged to "next".  Young
+    topic branches can have stupid mistakes you would rather
+    clean up before publishing, and things that have not been
+    merged into other branches can be easily rebased without
+    affecting other people.  But once it is published, you would
+    not want to rewind it.
+
+(2) ... if a topic branch has been fully merged to "master".
+    Then you can delete it.  More importantly, you should not
+    build on top of it -- other people may already want to
+    change things related to the topic as patches against your
+    "master", so if you need further changes, it is better to
+    fork the topic (perhaps with the same name) afresh from the
+    tip of "master".
+
+Let's look at this example:
+
+		   o---o---o---o---o---o---o---o---o---o "next"
+		  /       /           /           /
+		 /   a---a---b A     /           /
+		/   /               /           /
+	       /   /   c---c---c---c B         /
+	      /   /   /             \         /
+	     /   /   /   b---b C     \       /
+	    /   /   /   /             \     /
+    ---o---o---o---o---o---o---o---o---o---o---o "master"
+
+
+A, B and C are topic branches.
+
+ * A has one fix since it was merged up to "next".
+
+ * B has finished.  It has been fully merged up to "master" and "next",
+   and is ready to be deleted.
+
+ * C has not merged to "next" at all.
+
+We would want to allow C to be rebased, refuse A, and encourage
+B to be deleted.
+
+To compute (1):
+
+	git rev-list ^master ^topic next
+	git rev-list ^master        next
+
+	if these match, topic has not merged in next at all.
+
+To compute (2):
+
+	git rev-list master..topic
+
+	if this is empty, it is fully merged to "master".
+
+DOC_END
+</file>
+
+<file path="frontend/.git/hooks/pre-receive.sample">
+#!/bin/sh
+#
+# An example hook script to make use of push options.
+# The example simply echoes all push options that start with 'echoback='
+# and rejects all pushes when the "reject" push option is used.
+#
+# To enable this hook, rename this file to "pre-receive".
+
+if test -n "$GIT_PUSH_OPTION_COUNT"
+then
+	i=0
+	while test "$i" -lt "$GIT_PUSH_OPTION_COUNT"
+	do
+		eval "value=\$GIT_PUSH_OPTION_$i"
+		case "$value" in
+		echoback=*)
+			echo "echo from the pre-receive-hook: ${value#*=}" >&2
+			;;
+		reject)
+			exit 1
+		esac
+		i=$((i + 1))
+	done
+fi
+</file>
+
+<file path="frontend/.git/hooks/prepare-commit-msg.sample">
+#!/bin/sh
+#
+# An example hook script to prepare the commit log message.
+# Called by "git commit" with the name of the file that has the
+# commit message, followed by the description of the commit
+# message's source.  The hook's purpose is to edit the commit
+# message file.  If the hook fails with a non-zero status,
+# the commit is aborted.
+#
+# To enable this hook, rename this file to "prepare-commit-msg".
+
+# This hook includes three examples. The first one removes the
+# "# Please enter the commit message..." help message.
+#
+# The second includes the output of "git diff --name-status -r"
+# into the message, just before the "git status" output.  It is
+# commented because it doesn't cope with --amend or with squashed
+# commits.
+#
+# The third example adds a Signed-off-by line to the message, that can
+# still be edited.  This is rarely a good idea.
+
+COMMIT_MSG_FILE=$1
+COMMIT_SOURCE=$2
+SHA1=$3
+
+/usr/bin/perl -i.bak -ne 'print unless(m/^. Please enter the commit message/..m/^#$/)' "$COMMIT_MSG_FILE"
+
+# case "$COMMIT_SOURCE,$SHA1" in
+#  ,|template,)
+#    /usr/bin/perl -i.bak -pe '
+#       print "\n" . `git diff --cached --name-status -r`
+# 	 if /^#/ && $first++ == 0' "$COMMIT_MSG_FILE" ;;
+#  *) ;;
+# esac
+
+# SOB=$(git var GIT_COMMITTER_IDENT | sed -n 's/^\(.*>\).*$/Signed-off-by: \1/p')
+# git interpret-trailers --in-place --trailer "$SOB" "$COMMIT_MSG_FILE"
+# if test -z "$COMMIT_SOURCE"
+# then
+#   /usr/bin/perl -i.bak -pe 'print "\n" if !$first_line++' "$COMMIT_MSG_FILE"
+# fi
+</file>
+
+<file path="frontend/.git/hooks/push-to-checkout.sample">
+#!/bin/sh
+
+# An example hook script to update a checked-out tree on a git push.
+#
+# This hook is invoked by git-receive-pack(1) when it reacts to git
+# push and updates reference(s) in its repository, and when the push
+# tries to update the branch that is currently checked out and the
+# receive.denyCurrentBranch configuration variable is set to
+# updateInstead.
+#
+# By default, such a push is refused if the working tree and the index
+# of the remote repository has any difference from the currently
+# checked out commit; when both the working tree and the index match
+# the current commit, they are updated to match the newly pushed tip
+# of the branch. This hook is to be used to override the default
+# behaviour; however the code below reimplements the default behaviour
+# as a starting point for convenient modification.
+#
+# The hook receives the commit with which the tip of the current
+# branch is going to be updated:
+commit=$1
+
+# It can exit with a non-zero status to refuse the push (when it does
+# so, it must not modify the index or the working tree).
+die () {
+	echo >&2 "$*"
+	exit 1
+}
+
+# Or it can make any necessary changes to the working tree and to the
+# index to bring them to the desired state when the tip of the current
+# branch is updated to the new commit, and exit with a zero status.
+#
+# For example, the hook can simply run git read-tree -u -m HEAD "$1"
+# in order to emulate git fetch that is run in the reverse direction
+# with git push, as the two-tree form of git read-tree -u -m is
+# essentially the same as git switch or git checkout that switches
+# branches while keeping the local changes in the working tree that do
+# not interfere with the difference between the branches.
+
+# The below is a more-or-less exact translation to shell of the C code
+# for the default behaviour for git's push-to-checkout hook defined in
+# the push_to_deploy() function in builtin/receive-pack.c.
+#
+# Note that the hook will be executed from the repository directory,
+# not from the working tree, so if you want to perform operations on
+# the working tree, you will have to adapt your code accordingly, e.g.
+# by adding "cd .." or using relative paths.
+
+if ! git update-index -q --ignore-submodules --refresh
+then
+	die "Up-to-date check failed"
+fi
+
+if ! git diff-files --quiet --ignore-submodules --
+then
+	die "Working directory has unstaged changes"
+fi
+
+# This is a rough translation of:
+#
+#   head_has_history() ? "HEAD" : EMPTY_TREE_SHA1_HEX
+if git cat-file -e HEAD 2>/dev/null
+then
+	head=HEAD
+else
+	head=$(git hash-object -t tree --stdin </dev/null)
+fi
+
+if ! git diff-index --quiet --cached --ignore-submodules $head --
+then
+	die "Working directory has staged changes"
+fi
+
+if ! git read-tree -u -m "$commit"
+then
+	die "Could not update working tree to new HEAD"
+fi
+</file>
+
+<file path="frontend/.git/hooks/sendemail-validate.sample">
+#!/bin/sh
+
+# An example hook script to validate a patch (and/or patch series) before
+# sending it via email.
+#
+# The hook should exit with non-zero status after issuing an appropriate
+# message if it wants to prevent the email(s) from being sent.
+#
+# To enable this hook, rename this file to "sendemail-validate".
+#
+# By default, it will only check that the patch(es) can be applied on top of
+# the default upstream branch without conflicts in a secondary worktree. After
+# validation (successful or not) of the last patch of a series, the worktree
+# will be deleted.
+#
+# The following config variables can be set to change the default remote and
+# remote ref that are used to apply the patches against:
+#
+#   sendemail.validateRemote (default: origin)
+#   sendemail.validateRemoteRef (default: HEAD)
+#
+# Replace the TODO placeholders with appropriate checks according to your
+# needs.
+
+validate_cover_letter () {
+	file="$1"
+	# TODO: Replace with appropriate checks (e.g. spell checking).
+	true
+}
+
+validate_patch () {
+	file="$1"
+	# Ensure that the patch applies without conflicts.
+	git am -3 "$file" || return
+	# TODO: Replace with appropriate checks for this patch
+	# (e.g. checkpatch.pl).
+	true
+}
+
+validate_series () {
+	# TODO: Replace with appropriate checks for the whole series
+	# (e.g. quick build, coding style checks, etc.).
+	true
+}
+
+# main -------------------------------------------------------------------------
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = 1
+then
+	remote=$(git config --default origin --get sendemail.validateRemote) &&
+	ref=$(git config --default HEAD --get sendemail.validateRemoteRef) &&
+	worktree=$(mktemp --tmpdir -d sendemail-validate.XXXXXXX) &&
+	git worktree add -fd --checkout "$worktree" "refs/remotes/$remote/$ref" &&
+	git config --replace-all sendemail.validateWorktree "$worktree"
+else
+	worktree=$(git config --get sendemail.validateWorktree)
+fi || {
+	echo "sendemail-validate: error: failed to prepare worktree" >&2
+	exit 1
+}
+
+unset GIT_DIR GIT_WORK_TREE
+cd "$worktree" &&
+
+if grep -q "^diff --git " "$1"
+then
+	validate_patch "$1"
+else
+	validate_cover_letter "$1"
+fi &&
+
+if test "$GIT_SENDEMAIL_FILE_COUNTER" = "$GIT_SENDEMAIL_FILE_TOTAL"
+then
+	git config --unset-all sendemail.validateWorktree &&
+	trap 'git worktree remove -ff "$worktree"' EXIT &&
+	validate_series
+fi
+</file>
+
+<file path="frontend/.git/hooks/update.sample">
+#!/bin/sh
+#
+# An example hook script to block unannotated tags from entering.
+# Called by "git receive-pack" with arguments: refname sha1-old sha1-new
+#
+# To enable this hook, rename this file to "update".
+#
+# Config
+# ------
+# hooks.allowunannotated
+#   This boolean sets whether unannotated tags will be allowed into the
+#   repository.  By default they won't be.
+# hooks.allowdeletetag
+#   This boolean sets whether deleting tags will be allowed in the
+#   repository.  By default they won't be.
+# hooks.allowmodifytag
+#   This boolean sets whether a tag may be modified after creation. By default
+#   it won't be.
+# hooks.allowdeletebranch
+#   This boolean sets whether deleting branches will be allowed in the
+#   repository.  By default they won't be.
+# hooks.denycreatebranch
+#   This boolean sets whether remotely creating branches will be denied
+#   in the repository.  By default this is allowed.
+#
+
+# --- Command line
+refname="$1"
+oldrev="$2"
+newrev="$3"
+
+# --- Safety check
+if [ -z "$GIT_DIR" ]; then
+	echo "Don't run this script from the command line." >&2
+	echo " (if you want, you could supply GIT_DIR then run" >&2
+	echo "  $0 <ref> <oldrev> <newrev>)" >&2
+	exit 1
+fi
+
+if [ -z "$refname" -o -z "$oldrev" -o -z "$newrev" ]; then
+	echo "usage: $0 <ref> <oldrev> <newrev>" >&2
+	exit 1
+fi
+
+# --- Config
+allowunannotated=$(git config --type=bool hooks.allowunannotated)
+allowdeletebranch=$(git config --type=bool hooks.allowdeletebranch)
+denycreatebranch=$(git config --type=bool hooks.denycreatebranch)
+allowdeletetag=$(git config --type=bool hooks.allowdeletetag)
+allowmodifytag=$(git config --type=bool hooks.allowmodifytag)
+
+# check for no description
+projectdesc=$(sed -e '1q' "$GIT_DIR/description")
+case "$projectdesc" in
+"Unnamed repository"* | "")
+	echo "*** Project description file hasn't been set" >&2
+	exit 1
+	;;
+esac
+
+# --- Check types
+# if $newrev is 0000...0000, it's a commit to delete a ref.
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+if [ "$newrev" = "$zero" ]; then
+	newrev_type=delete
+else
+	newrev_type=$(git cat-file -t $newrev)
+fi
+
+case "$refname","$newrev_type" in
+	refs/tags/*,commit)
+		# un-annotated tag
+		short_refname=${refname##refs/tags/}
+		if [ "$allowunannotated" != "true" ]; then
+			echo "*** The un-annotated tag, $short_refname, is not allowed in this repository" >&2
+			echo "*** Use 'git tag [ -a | -s ]' for tags you want to propagate." >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,delete)
+		# delete tag
+		if [ "$allowdeletetag" != "true" ]; then
+			echo "*** Deleting a tag is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/tags/*,tag)
+		# annotated tag
+		if [ "$allowmodifytag" != "true" ] && git rev-parse $refname > /dev/null 2>&1
+		then
+			echo "*** Tag '$refname' already exists." >&2
+			echo "*** Modifying a tag is not allowed in this repository." >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,commit)
+		# branch
+		if [ "$oldrev" = "$zero" -a "$denycreatebranch" = "true" ]; then
+			echo "*** Creating a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/heads/*,delete)
+		# delete branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	refs/remotes/*,commit)
+		# tracking branch
+		;;
+	refs/remotes/*,delete)
+		# delete tracking branch
+		if [ "$allowdeletebranch" != "true" ]; then
+			echo "*** Deleting a tracking branch is not allowed in this repository" >&2
+			exit 1
+		fi
+		;;
+	*)
+		# Anything else (is there anything else?)
+		echo "*** Update hook: unknown type of update to ref $refname of type $newrev_type" >&2
+		exit 1
+		;;
+esac
+
+# --- Finished
+exit 0
+</file>
+
+<file path="frontend/.git/info/exclude">
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+</file>
+
+<file path="frontend/.git/logs/HEAD">
+0000000000000000000000000000000000000000 34840910469fc5033ae68c4e67dd5209bf02e66f TheAyushTandon <ayushtandon2005@gmail.com> 1774645317 +0530	commit (initial): feat: initial commit
+</file>
+
+<file path="frontend/.git/logs/refs/heads/master">
+0000000000000000000000000000000000000000 34840910469fc5033ae68c4e67dd5209bf02e66f TheAyushTandon <ayushtandon2005@gmail.com> 1774645317 +0530	commit (initial): feat: initial commit
+</file>
+
+<file path="frontend/.git/refs/heads/master">
+34840910469fc5033ae68c4e67dd5209bf02e66f
+</file>
+
+<file path="frontend/.gitignore">
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+</file>
+
+<file path="frontend/AGENTS.md">
+<!-- BEGIN:nextjs-agent-rules -->
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
+<!-- END:nextjs-agent-rules -->
+</file>
+
+<file path="frontend/CLAUDE.md">
+@AGENTS.md
+</file>
+
+<file path="frontend/components.json">
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "base-nova",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/app/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "rtl": false,
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "menuColor": "default",
+  "menuAccent": "subtle",
+  "registries": {}
+}
+</file>
+
+<file path="frontend/eslint.config.mjs">
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+  ]),
+]);
+
+export default eslintConfig;
+</file>
+
+<file path="frontend/next.config.ts">
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  /* config options here */
+  reactCompiler: true,
+};
+
+export default nextConfig;
+</file>
+
+<file path="frontend/package.json">
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@base-ui/react": "^1.3.0",
+    "@gsap/react": "^2.1.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "gsap": "^3.14.2",
+    "lucide-react": "^1.7.0",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "shadcn": "^4.1.1",
+    "tailwind-merge": "^3.5.0",
+    "tw-animate-css": "^1.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+</file>
+
+<file path="frontend/postcss.config.mjs">
+const config = {
+  plugins: {
+    "@tailwindcss/postcss": {},
+  },
+};
+
+export default config;
+</file>
+
+<file path="frontend/public/file.svg">
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M14.5 13.5V5.41a1 1 0 0 0-.3-.7L9.8.29A1 1 0 0 0 9.08 0H1.5v13.5A2.5 2.5 0 0 0 4 16h8a2.5 2.5 0 0 0 2.5-2.5m-1.5 0v-7H8v-5H3v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1M9.5 5V2.12L12.38 5zM5.13 5h-.62v1.25h2.12V5zm-.62 3h7.12v1.25H4.5zm.62 3h-.62v1.25h7.12V11z" clip-rule="evenodd" fill="#666" fill-rule="evenodd"/></svg>
+</file>
+
+<file path="frontend/public/globe.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.27 14.1a6.5 6.5 0 0 0 3.67-3.45q-1.24.21-2.7.34-.31 1.83-.97 3.1M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.48-1.52a7 7 0 0 1-.96 0H7.5a4 4 0 0 1-.84-1.32q-.38-.89-.63-2.08a40 40 0 0 0 3.92 0q-.25 1.2-.63 2.08a4 4 0 0 1-.84 1.31zm2.94-4.76q1.66-.15 2.95-.43a7 7 0 0 0 0-2.58q-1.3-.27-2.95-.43a18 18 0 0 1 0 3.44m-1.27-3.54a17 17 0 0 1 0 3.64 39 39 0 0 1-4.3 0 17 17 0 0 1 0-3.64 39 39 0 0 1 4.3 0m1.1-1.17q1.45.13 2.69.34a6.5 6.5 0 0 0-3.67-3.44q.65 1.26.98 3.1M8.48 1.5l.01.02q.41.37.84 1.31.38.89.63 2.08a40 40 0 0 0-3.92 0q.25-1.2.63-2.08a4 4 0 0 1 .85-1.32 7 7 0 0 1 .96 0m-2.75.4a6.5 6.5 0 0 0-3.67 3.44 29 29 0 0 1 2.7-.34q.31-1.83.97-3.1M4.58 6.28q-1.66.16-2.95.43a7 7 0 0 0 0 2.58q1.3.27 2.95.43a18 18 0 0 1 0-3.44m.17 4.71q-1.45-.12-2.69-.34a6.5 6.5 0 0 0 3.67 3.44q-.65-1.27-.98-3.1" fill="#666"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v16H0z"/></clipPath></defs></svg>
+</file>
+
+<file path="frontend/public/next.svg">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 394 80"><path fill="#000" d="M262 0h68.5v12.7h-27.2v66.6h-13.6V12.7H262V0ZM149 0v12.7H94v20.4h44.3v12.6H94v21h55v12.6H80.5V0h68.7zm34.3 0h-17.8l63.8 79.4h17.9l-32-39.7 32-39.6h-17.9l-23 28.6-23-28.6zm18.3 56.7-9-11-27.1 33.7h17.8l18.3-22.7z"/><path fill="#000" d="M81 79.3 17 0H0v79.3h13.6V17l50.2 62.3H81Zm252.6-.4c-1 0-1.8-.4-2.5-1s-1.1-1.6-1.1-2.6.3-1.8 1-2.5 1.6-1 2.6-1 1.8.3 2.5 1a3.4 3.4 0 0 1 .6 4.3 3.7 3.7 0 0 1-3 1.8zm23.2-33.5h6v23.3c0 2.1-.4 4-1.3 5.5a9.1 9.1 0 0 1-3.8 3.5c-1.6.8-3.5 1.3-5.7 1.3-2 0-3.7-.4-5.3-1s-2.8-1.8-3.7-3.2c-.9-1.3-1.4-3-1.4-5h6c.1.8.3 1.6.7 2.2s1 1.2 1.6 1.5c.7.4 1.5.5 2.4.5 1 0 1.8-.2 2.4-.6a4 4 0 0 0 1.6-1.8c.3-.8.5-1.8.5-3V45.5zm30.9 9.1a4.4 4.4 0 0 0-2-3.3 7.5 7.5 0 0 0-4.3-1.1c-1.3 0-2.4.2-3.3.5-.9.4-1.6 1-2 1.6a3.5 3.5 0 0 0-.3 4c.3.5.7.9 1.3 1.2l1.8 1 2 .5 3.2.8c1.3.3 2.5.7 3.7 1.2a13 13 0 0 1 3.2 1.8 8.1 8.1 0 0 1 3 6.5c0 2-.5 3.7-1.5 5.1a10 10 0 0 1-4.4 3.5c-1.8.8-4.1 1.2-6.8 1.2-2.6 0-4.9-.4-6.8-1.2-2-.8-3.4-2-4.5-3.5a10 10 0 0 1-1.7-5.6h6a5 5 0 0 0 3.5 4.6c1 .4 2.2.6 3.4.6 1.3 0 2.5-.2 3.5-.6 1-.4 1.8-1 2.4-1.7a4 4 0 0 0 .8-2.4c0-.9-.2-1.6-.7-2.2a11 11 0 0 0-2.1-1.4l-3.2-1-3.8-1c-2.8-.7-5-1.7-6.6-3.2a7.2 7.2 0 0 1-2.4-5.7 8 8 0 0 1 1.7-5 10 10 0 0 1 4.3-3.5c2-.8 4-1.2 6.4-1.2 2.3 0 4.4.4 6.2 1.2 1.8.8 3.2 2 4.3 3.4 1 1.4 1.5 3 1.5 5h-5.8z"/></svg>
+</file>
+
+<file path="frontend/public/vercel.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1155 1000"><path d="m577.3 0 577.4 1000H0z" fill="#fff"/></svg>
+</file>
+
+<file path="frontend/public/window.svg">
+<svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 2.5h13v10a1 1 0 0 1-1 1h-11a1 1 0 0 1-1-1zM0 1h16v11.5a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 0 12.5zm3.75 4.5a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5M7 4.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5" fill="#666"/></svg>
+</file>
+
+<file path="frontend/README.md">
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+</file>
+
+<file path="frontend/src/app/globals.css">
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Boldonse:wght@400;700;900&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Boldonse", sans-serif;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: oklch(0 0 0); /* Pure Black */
+  --foreground: oklch(1 0 0); /* Pure White */
+  --card: oklch(0.1 0 0);
+  --card-foreground: oklch(1 0 0);
+  --popover: oklch(0.1 0 0);
+  --popover-foreground: oklch(1 0 0);
+  --primary: oklch(0.85 0.2 160); /* Soft Green Accent */
+  --primary-foreground: oklch(0 0 0);
+  --secondary: oklch(0.2 0 0);
+  --secondary-foreground: oklch(1 0 0);
+  --muted: oklch(0.2 0 0);
+  --muted-foreground: oklch(0.7 0 0);
+  --accent: oklch(0.85 0.2 160);
+  --accent-foreground: oklch(0 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-black text-white font-sans antialiased selection:bg-primary selection:text-primary-foreground;
+  }
+  
+  /* 🌑 Modern Flat Black Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #111111;
+    border: 3px solid #000000;
+    border-radius: 100px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1a1a1a;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight leading-tight;
+  }
+}
+</file>
+
+<file path="frontend/src/app/layout.tsx">
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "Create Next App",
+  description: "Generated by create next app",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col">{children}</body>
+    </html>
+  );
+}
+</file>
+
+<file path="frontend/src/app/page.tsx">
+"use client";
+
+import { BlurTextAnimation } from "@/components/ui/blur-text-animation";
+import { ScrollImageSequence } from "@/components/ScrollImageSequence";
+import { Button } from "@/components/ui/button";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { useRef } from "react";
+
+const SECTIONS = [
+  {
+    text: "Still getting rejected?\nNo credit history. No second chances.",
+    side: "right" as const,
+  },
+  {
+    text: "The system is broken.\nTraditional scores ignore real financial behavior.",
+    side: "left" as const,
+  },
+  {
+    text: "Meet Equis.\nCredit beyond history.",
+    side: "right" as const,
+  },
+  {
+    text: "We analyze what others miss.\nIncome stability. Spending patterns. Real life.",
+    side: "left" as const,
+  },
+  {
+    text: "Your story matters.\nNot just your past.",
+    side: "right" as const,
+  },
+  {
+    text: "Approved.\nBecause you deserve a fair chance.",
+    side: "left" as const,
+  },
+];
+
+export default function LandingPage() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  const smoothProgress = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+  return (
+    <main ref={containerRef} className="relative bg-black text-white selection:bg-[#00ff88] selection:text-black font-sans">
+      <Navbar />
+      
+      {/* 🖼️ Full-Screen Background Animation (GSAP Powered) */}
+      <div className="fixed inset-0 z-0 h-screen w-full overflow-hidden">
+        <ScrollImageSequence 
+          frameCount={240} 
+          baseUrl="/frames/ezgif-frame-" 
+          extension=".jpg" 
+        />
+        <motion.div 
+          style={{ 
+            opacity: useTransform(smoothProgress, [0.82, 0.92], [0.4, 1]),
+            backdropFilter: useTransform(smoothProgress, [0.82, 0.92], ["blur(0px)", "blur(60px)"])
+          }}
+          className="absolute inset-0 bg-black pointer-events-none"
+        />
+      </div>
+
+      {/* 📝 Intersecting Text Sections */}
+      <div className="relative z-10 w-full overflow-x-hidden">
+        {SECTIONS.map((section, index) => (
+          <section
+            key={index}
+            className={`h-screen flex items-center px-8 md:px-24 ${
+              section.side === "right" ? "justify-end text-right" : "justify-start text-left"
+            }`}
+          >
+            <BlurTextAnimation 
+              text={section.text} 
+              side={section.side}
+              className="max-w-4xl" // Increased max-width for bigger fonts
+            />
+          </section>
+        ))}
+
+        {/* 🚀 Final CTA Section */}
+        <section className="h-screen flex flex-col justify-center items-center px-8 z-20">
+          <BlurTextAnimation 
+            text={`Start your journey\nReady for financial resilience?`} 
+            side="center" 
+            sticky={true}
+            className="mb-12 text-center"
+          />
+          <div className="flex flex-col sm:row gap-6 w-full max-w-md">
+            <Button 
+              size="lg" 
+              className="group relative overflow-hidden bg-[#00ff88] text-black hover:bg-[#00ff88] font-bold h-20 text-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95 px-12"
+            >
+              <span className="relative z-10">Get Started Now</span>
+            </Button>
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="h-20 border-white/20 text-white hover:bg-white/10 text-2xl rounded-full transition-all duration-300 hover:scale-105 active:scale-95"
+            >
+              Sign In
+            </Button>
+          </div>
+        </section>
+      </div>
+
+      {/* 🧪 Ambient Glow Effects */}
+      <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+        <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-[#00ff88]/05 blur-[150px] rounded-full" />
+        <div className="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] bg-[#00ff88]/05 blur-[150px] rounded-full" />
+      </div>
+
+      <Footer />
+    </main>
+  );
+}
+</file>
+
+<file path="frontend/src/app/why-equis/page.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { Check, X, Shield, Zap, TrendingUp, Users } from "lucide-react";
+
+const COMPARISON = [
+  { feature: "Primary Data Source", traditional: "Past Debt History", equis: "Real-time Income & Spending", highlighted: true },
+  { feature: "Update Frequency", traditional: "Monthly (Delayed)", equis: "Instantaneous", highlighted: false },
+  { feature: "Bias Risk", traditional: "High (Demographic Bias)", equis: "Low (Behavioral Analysis)", highlighted: true },
+  { feature: "Inclusion", traditional: "Credit-Active Only", equis: "Everyone with a Bank Account", highlighted: false },
+  { feature: "Growth Incentives", traditional: "Slow Recovery", equis: "Real-time Resilience Scoring", highlighted: true },
+];
+
+const PILLARS = [
+  {
+    title: "Income Stability",
+    description: "We look at the consistency and source of your earnings, not just the amount. Freelance, gig-work, or salary—it all counts.",
+    icon: <Zap className="w-8 h-8 text-[#00ff88]" />,
+  },
+  {
+    title: "Spending IQ",
+    description: "Our AI analyzes how you manage money. Responsible spending is rewarded regardless of your credit score.",
+    icon: <TrendingUp className="w-8 h-8 text-[#00ff88]" />,
+  },
+  {
+    title: "Adaptive Risk",
+    description: "Instead of one static number, Equis adapts to your current financial state, providing real-time opportunities.",
+    icon: <Shield className="w-8 h-8 text-[#00ff88]" />,
+  },
+  {
+    title: "Unified Profile",
+    description: "Connected across 12,000+ banks. Access your comprehensive financial identity in seconds.",
+    icon: <Users className="w-8 h-8 text-[#00ff88]" />,
+  },
+];
+
+export default function WhyEquisPage() {
+  return (
+    <main className="min-h-screen bg-black text-white selection:bg-[#00ff88] selection:text-black">
+      <Navbar />
+
+      {/* 🌌 Hero Section */}
+      <section className="relative pt-40 pb-32 px-8 md:px-24 overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[#00ff88]/10 blur-[180px] rounded-full -translate-y-1/2" />
+        
+        <div className="max-w-7xl mx-auto">
+          <motion.h1 
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            className="text-[6rem] md:text-[11rem] font-display font-black leading-[0.75] mb-4 tracking-tighter"
+          >
+            THE SYSTEM IS<br/>
+             <span className="text-[#00ff88]">OBSOLETE.</span>
+          </motion.h1>
+          <div className="flex justify-end">
+            <motion.p 
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              className="text-xl md:text-3xl text-white/50 max-w-2xl font-sans font-light leading-relaxed italic text-right mt-12"
+            >
+              Traditional credit scores are a lagging indicator of your past. 
+              Equis is a leading indicator of your future potential. 
+              We built the David Protocol to bridge the gap.
+            </motion.p>
+          </div>
+        </div>
+      </section>
+
+      {/* ⚔️ Comparison Section */}
+      <section className="py-24 px-8 md:px-24 bg-neutral-950/50 border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-display font-black mb-16 uppercase tracking-wider text-center">
+            Traditional vs. <span className="text-[#00ff88]">Equis</span>
+          </h2>
+          
+          <div className="rounded-3xl overflow-hidden border border-white/10 bg-black/40 backdrop-blur-xl">
+            <div className="grid grid-cols-1 md:grid-cols-3 border-b border-white/10 bg-white/5">
+              <div className="p-6 md:p-8 text-xs uppercase tracking-[0.2em] text-white/40">Efficiency Metrics</div>
+              <div className="p-6 md:p-8 text-lg font-display text-white/60">The Old Way</div>
+              <div className="p-6 md:p-8 text-lg font-display text-[#00ff88]">The Equis Way</div>
+            </div>
+            
+            {COMPARISON.map((row, i) => (
+              <div key={i} className={cn(
+                "grid grid-cols-1 md:grid-cols-3 border-b border-white/5 last:border-0",
+                row.highlighted && "bg-white/[0.02]"
+              )}>
+                <div className="p-6 md:p-8 font-sans font-medium text-white/80 border-b md:border-b-0 md:border-r border-white/5">
+                  {row.feature}
+                </div>
+                <div className="p-6 md:p-8 text-white/30 flex items-center gap-3 border-b md:border-b-0 md:border-r border-white/5">
+                   <X className="w-5 h-5 text-red-500/50 flex-shrink-0" /> 
+                   <span className="text-sm md:text-base">{row.traditional}</span>
+                </div>
+                <div className="p-6 md:p-8 text-white font-bold flex items-center gap-3 bg-[#00ff88]/5">
+                   <Check className="w-5 h-5 text-[#00ff88] flex-shrink-0" /> 
+                   <span className="text-sm md:text-base">{row.equis}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 💎 Pillars Section */}
+      <section className="py-24 px-8 md:px-24 border-t border-white/5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {PILLARS.map((pillar, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="flex flex-col"
+            >
+              <div className="mb-6 p-4 rounded-2xl bg-[#00ff88]/5 border border-[#00ff88]/10 w-fit">
+                {pillar.icon}
+              </div>
+              <h3 className="text-2xl font-display font-black mb-4 uppercase">{pillar.title}</h3>
+              <p className="text-white/40 leading-relaxed text-sm">{pillar.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* 🚀 Final Call to Action */}
+      <section className="py-24 px-8 md:px-24 mb-20">
+        <div className="max-w-7xl mx-auto rounded-[3rem] p-12 md:p-24 bg-gradient-to-br from-[#00ff88]/20 to-emerald-900/10 border border-[#00ff88]/20 flex flex-col items-center text-center">
+          <h2 className="text-4xl md:text-7xl font-display font-black mb-8 leading-tight">
+            BE PART OF THE <br/> REVOLUTION.
+          </h2>
+          <p className="text-lg md:text-2xl text-white/60 mb-12 max-w-2xl font-light italic">
+            Stop living in the shadow of your past debts. Start building a financial identity based on your current reality.
+          </p>
+          <Button 
+            size="lg" 
+            className="bg-[#00ff88] text-black hover:bg-[#00ff88] font-bold h-20 text-2xl rounded-full px-12 transition-all duration-300 hover:scale-105 active:scale-95"
+          >
+            Join Equis Today
+          </Button>
+        </div>
+      </section>
+
+      <Footer />
+    </main>
+  );
+}
+</file>
+
+<file path="frontend/src/components/Footer.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ArrowRight, Box, Shield, Activity } from "lucide-react";
+
+export function Footer() {
+  const currentYear = new Date().getFullYear();
+  
+  return (
+    <footer className="relative bg-black border-t border-white/10 px-8 py-20 pb-40 md:px-24 z-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-20">
+        <div className="col-span-2 lg:col-span-2">
+          <Link href="/" className="inline-flex items-center gap-2 text-2xl font-bold text-white mb-6">
+            <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-[#00ff88] to-emerald-500" />
+            Equis
+          </Link>
+          <p className="text-white/40 text-sm max-w-xs mb-8 leading-relaxed">
+            The next generation of financial resilience scoring. 
+            Credit data beyond the traditional history.
+          </p>
+          <div className="flex items-center gap-6 text-white/40">
+            <Box size={20} className="hover:text-white transition-colors cursor-pointer" />
+            <Shield size={20} className="hover:text-white transition-colors cursor-pointer" />
+            <Activity size={20} className="hover:text-white transition-colors cursor-pointer" />
+          </div>
+        </div>
+
+        <div>
+          <h4 className="text-white font-bold text-sm mb-6 uppercase tracking-widest opacity-50">Product</h4>
+          <ul className="flex flex-col gap-4 text-white/40 text-sm">
+            <li><Link href="#" className="hover:text-white transition-colors">Features</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Security</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Integrations</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Roadmap</Link></li>
+          </ul>
+        </div>
+
+        <div>
+           <h4 className="text-white font-bold text-sm mb-6 uppercase tracking-widest opacity-50">Company</h4>
+          <ul className="flex flex-col gap-4 text-white/40 text-sm">
+            <li><Link href="#" className="hover:text-white transition-colors">About</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Blog</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Careers</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Contact</Link></li>
+          </ul>
+        </div>
+
+        <div>
+           <h4 className="text-white font-bold text-sm mb-6 uppercase tracking-widest opacity-50">Legal</h4>
+          <ul className="flex flex-col gap-4 text-white/40 text-sm">
+            <li><Link href="#" className="hover:text-white transition-colors">Privacy</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Terms of Service</Link></li>
+            <li><Link href="#" className="hover:text-white transition-colors">Cookie Policy</Link></li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6 py-6 border-t border-white/5 text-xs text-white/30 uppercase tracking-widest">
+        <span>© {currentYear} Equis Architecture. All rights reserved.</span>
+        <div className="flex gap-8">
+          <span>Built for the Hackathon</span>
+          <span>Powered by David Protocol</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
+</file>
+
+<file path="frontend/src/components/Navbar.tsx">
+"use client";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+
+export function Navbar() {
+  return (
+    <motion.nav 
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-24 h-20 bg-black/20 backdrop-blur-md border-b border-white/10"
+    >
+      <Link href="/" className="text-2xl font-bold tracking-tighter text-white flex items-center gap-3">
+        <img src="/logo.png" alt="Equis Logo" className="w-10 h-10 object-cover invert rounded-full" />
+        <span className="font-display uppercase tracking-widest text-lg pt-1">Equis</span>
+      </Link>
+
+      <div className="hidden md:flex items-center gap-8 text-sm font-medium text-white/60">
+        <Link href="/" className="hover:text-white transition-colors">Home</Link>
+        <Link href="/why-equis" className="hover:text-white transition-colors">Why Equis</Link>
+        <Link href="#" className="hover:text-white transition-colors">Features</Link>
+      </div>
+
+      <div className="flex items-center gap-4">
+        <Button variant="ghost" className="text-white hover:bg-white/10 hidden sm:flex">Login</Button>
+        <Button className="bg-[#00ff88] text-black hover:bg-[#00ff88]/90 font-bold rounded-full px-6">
+          Get Started
+        </Button>
+      </div>
+    </motion.nav>
+  );
+}
+</file>
+
+<file path="frontend/src/components/ScrollImageSequence.tsx">
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
+
+interface ScrollImageSequenceProps {
+  frameCount: number;
+  baseUrl: string;
+  extension: string;
+}
+
+export function ScrollImageSequence({
+  frameCount,
+  baseUrl,
+  extension,
+}: ScrollImageSequenceProps) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const imagesRef = useRef<HTMLImageElement[]>([]);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // 🔄 Preload Images
+  useEffect(() => {
+    const preloadedImages: HTMLImageElement[] = [];
+    for (let i = 1; i <= frameCount; i++) {
+      const img = new Image();
+      img.src = `${baseUrl}${i.toString().padStart(3, "0")}${extension}`;
+      preloadedImages.push(img);
+    }
+    imagesRef.current = preloadedImages;
+  }, [frameCount, baseUrl, extension]);
+
+  useGSAP(() => {
+    const canvas = canvasRef.current;
+    const context = canvas?.getContext("2d");
+    if (!canvas || !context) return;
+
+    // 🏆 GSAP Scroll Animation
+    const airbnb = { frame: 0 };
+    
+    const render = () => {
+      const img = imagesRef.current[Math.round(airbnb.frame)];
+      if (!img || !img.complete) return;
+
+      const dpr = window.devicePixelRatio || 1;
+      
+      // 🏆 Advanced Centering & Cropping
+      // Hide watermark (2.5%) and Shift phone to center (since it's right-heavy in frames)
+      const cropBottomPercent = 0.025;
+      const sWidth = img.width;
+      const sHeight = img.height * (1 - cropBottomPercent);
+      
+      // Use a pure "Cover" scale to fill the entire screen
+      const scale = Math.max(canvas.width / sWidth, canvas.height / sHeight);
+      const dWidth = sWidth * scale;
+      const dHeight = sHeight * scale;
+      
+      // 🎯 RIGHT SHIFT: Adjust the multiplier to move it further right
+      // Try 0.1, 0.2, etc. (0 will be centered)
+      const rightShift = dWidth * 0.045; 
+
+      const dx = (canvas.width - dWidth) / 2 + rightShift; // ➕ Change to plus
+      const dy = (canvas.height - dHeight) / 2;
+
+
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      context.drawImage(img, 0, 0, sWidth, sHeight, dx, dy, dWidth, dHeight);
+    };
+
+    // Initialize first frame if available
+    if (imagesRef.current[0]) {
+      imagesRef.current[0].onload = render;
+    }
+
+    gsap.to(airbnb, {
+      frame: frameCount - 1,
+      snap: "frame",
+      ease: "none",
+      scrollTrigger: {
+        trigger: "main",      // Track the whole page scroll
+        start: "top top",
+        end: "bottom bottom",
+        scrub: 0.5,           // Smooth scrub for that "Professional" feel
+      },
+      onUpdate: render,
+    });
+
+    const resize = () => {
+      const dpr = window.devicePixelRatio || 1;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+      // We don't call scale(dpr) here because we draw with physical dimensions for maximum sharpness
+      render();
+    };
+
+    window.addEventListener("resize", resize);
+    resize();
+    
+    return () => window.removeEventListener("resize", resize);
+  }, { scope: containerRef });
+
+  return (
+    <div ref={containerRef} className="w-full h-full relative">
+      <canvas
+        ref={canvasRef}
+        className="w-full h-full object-cover"
+      />
+    </div>
+  );
+}
+</file>
+
+<file path="frontend/src/components/ui/blur-text-animation.tsx">
+"use client";
+
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import { useRef } from "react";
+import { cn } from "@/lib/utils";
+
+interface BlurTextAnimationProps {
+  text: string;
+  className?: string;
+  side?: "left" | "right" | "center";
+  sticky?: boolean;
+}
+
+export function BlurTextAnimation({ text, className, side = "left", sticky = false }: BlurTextAnimationProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"],
+  });
+
+  const opacityRange = sticky ? [0.2, 0.4, 1, 1] : [0.2, 0.4, 0.6, 0.8];
+  const xRange = sticky ? [0.2, 0.4, 1, 1] : [0.2, 0.4, 0.6, 0.8];
+  
+  const opacity = useTransform(scrollYProgress, opacityRange, [0, 1, 1, 0]);
+  const initialX = side === "right" ? 100 : -100;
+  const x = useTransform(scrollYProgress, xRange, [initialX, 0, 0, initialX]);
+
+  const smoothOpacity = useSpring(opacity, { stiffness: 100, damping: 30 });
+  const smoothX = useSpring(x, { stiffness: 100, damping: 30 });
+
+  const lines = text.split("\n");
+
+  // ✨ HELPER: Determine the styling for a specific word based on the content
+  const getWordStyle = (word: string, lineIdx: number) => {
+    const cleanWord = word.toLowerCase().replace(/[?.,]/g, "");
+    
+    // 🔴 Problem Words (Soft Red) - As requested
+    if (["rejected", "broken", "ignore", "miss"].includes(cleanWord)) {
+      return "text-[#ff6b6b] drop-shadow-sm"; 
+    }
+    
+    // 🟢 Solution Words (Equis Green)
+    if (["equis", "approved", "story", "matters", "resilience"].includes(cleanWord)) {
+      return "text-[#00ff88] drop-shadow-[0_0_15px_rgba(0,255,136,0.2)]";
+    }
+
+    // 💡 Specific Interaction: Underline "system"
+    if (cleanWord === "system") {
+      return "underline decoration-[#ff6b6b]/40 underline-offset-8";
+    }
+
+    return "text-white";
+  };
+
+  return (
+    <motion.div
+      ref={containerRef}
+      style={{ 
+        opacity: smoothOpacity, 
+        x: smoothX
+      }}
+      className={cn(
+        "text-4xl md:text-6xl font-display font-black tracking-tight leading-[1.1] text-white",
+        side === "right" ? "text-right" : side === "center" ? "text-center" : "text-left",
+        className
+      )}
+    >
+      {lines.map((line, lineIdx) => (
+        <span 
+          key={lineIdx} 
+          className={cn(
+            "block py-4 overflow-hidden", // 🛠️ Increased padding + neutralized margins
+            lineIdx > 0 && "font-sans font-light opacity-50 text-xl md:text-3xl tracking-normal mt-2 max-w-xl leading-relaxed italic"
+          )}
+        >
+          {line.split(" ").map((word, wordIdx) => (
+            <motion.span
+              key={wordIdx}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.6, 
+                delay: (lineIdx * 0.1) + (wordIdx * 0.05),
+                ease: "easeOut" 
+              }}
+              viewport={{ once: false }}
+              className={cn(
+                "inline-block mr-[0.25em]",
+                lineIdx === 0 && getWordStyle(word, lineIdx)
+              )}
+            >
+              {word}
+            </motion.span>
+          ))}
+        </span>
+      ))}
+    </motion.div>
+  );
+}
+</file>
+
+<file path="frontend/src/components/ui/button.tsx">
+"use client"
+
+import { Button as ButtonPrimitive } from "@base-ui/react/button"
+import { cva, type VariantProps } from "class-variance-authority"
+
+import { cn } from "@/lib/utils"
+
+const buttonVariants = cva(
+  "group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 active:not-aria-[haspopup]:translate-y-px disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground [a]:hover:bg-primary/80",
+        outline:
+          "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80 aria-expanded:bg-secondary aria-expanded:text-secondary-foreground",
+        ghost:
+          "hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:hover:bg-muted/50",
+        destructive:
+          "bg-destructive/10 text-destructive hover:bg-destructive/20 focus-visible:border-destructive/40 focus-visible:ring-destructive/20 dark:bg-destructive/20 dark:hover:bg-destructive/30 dark:focus-visible:ring-destructive/40",
+        link: "text-primary underline-offset-4 hover:underline",
+      },
+      size: {
+        default:
+          "h-8 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2",
+        xs: "h-6 gap-1 rounded-[min(var(--radius-md),10px)] px-2 text-xs in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3",
+        sm: "h-7 gap-1 rounded-[min(var(--radius-md),12px)] px-2.5 text-[0.8rem] in-data-[slot=button-group]:rounded-lg has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 [&_svg:not([class*='size-'])]:size-3.5",
+        lg: "h-9 gap-1.5 px-2.5 has-data-[icon=inline-end]:pr-3 has-data-[icon=inline-start]:pl-3",
+        icon: "size-8",
+        "icon-xs":
+          "size-6 rounded-[min(var(--radius-md),10px)] in-data-[slot=button-group]:rounded-lg [&_svg:not([class*='size-'])]:size-3",
+        "icon-sm":
+          "size-7 rounded-[min(var(--radius-md),12px)] in-data-[slot=button-group]:rounded-lg",
+        "icon-lg": "size-9",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  }
+)
+
+function Button({
+  className,
+  variant = "default",
+  size = "default",
+  ...props
+}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+  return (
+    <ButtonPrimitive
+      data-slot="button"
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    />
+  )
+}
+
+export { Button, buttonVariants }
+</file>
+
+<file path="frontend/tsconfig.json">
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
+</file>
+
+<file path=".gitignore">
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Database
+david_protocol.db
+*.sqlite3
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# ML Models (Personal preference, but usually shared)
+# backend/models/*.joblib
+# backend/models/*.pkl
+</file>
+
+<file path="backend/__init__.py">
+
+</file>
+
+<file path="backend/.env.example">
+# David Protocol - Environment Configuration
+
+# Plaid API Keys (Get from dashboard.plaid.com)
+PLAID_CLIENT_ID=your_client_id
+PLAID_SECRET=your_secret
+PLAID_ENV=sandbox  # sandbox, development, or production
+
+# Gemini API Key (Get from aistudio.google.com)
+GEMINI_API_KEY=your_gemini_api_key
+
+# Database Configuration
+# Local SQLite: sqlite:///./david_protocol.db
+# Cloud PostgreSQL: postgresql://user:password@host:port/dbname
+DATABASE_URL=postgresql://user:password@host:port/dbname
+
+# Encryption Key (Generated with 'cryptography' Fernet)
+ENCRYPTION_KEY=your_encryption_key_here
+
+# App Secret Key (For JWT)
+SECRET_KEY=your_secret_key_here
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+</file>
+
+<file path="backend/db/__init__.py">
+
+</file>
+
+<file path="backend/db/base.py">
+from sqlalchemy import create_engine
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./david_protocol.db")
+
+# Create SQLAlchemy engine
+# SQLite-specific: connect_args={"check_same_thread": False}
+# PostgreSQL/Cloud: Might need sslmode=require
+if DATABASE_URL.startswith("sqlite"):
+    engine = create_engine(DATABASE_URL, connect_args={"check_same_thread": False})
+elif DATABASE_URL.startswith("postgresql"):
+    # Typical cloud DBs (Supabase, Render) often need SSL
+    if "?" not in DATABASE_URL:
+        DATABASE_URL += "?sslmode=require"
+    engine = create_engine(DATABASE_URL)
+else:
+    engine = create_engine(DATABASE_URL)
+
+# Create SessionLocal class
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
+
+# Base class for declarative models
+Base = declarative_base()
+
+# Dependency to get db session
+def get_db():
+    db = SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+</file>
+
+<file path="backend/db/models.py">
+from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, Text, Boolean
+from sqlalchemy.orm import relationship
+from datetime import datetime
+from .base import Base
+
+class User(Base):
+    __tablename__ = "users"
+
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    plaid_access_token = Column(String, nullable=True)  # Should be encrypted
+    plaid_item_id = Column(String, nullable=True)
+    last_sync = Column(DateTime, nullable=True)
+    is_active = Column(Boolean, default=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+    # Relationships
+    transactions = relationship("Transaction", back_populates="user")
+    scores = relationship("Score", back_populates="user")
+
+class Transaction(Base):
+    __tablename__ = "transactions"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    plaid_transaction_id = Column(String, unique=True, index=True)
+    amount = Column(Float)
+    date = Column(DateTime)
+    name = Column(String)
+    category = Column(String)  # Plaid category
+    resilience_category = Column(String, nullable=True)  # Our NLP category
+    merchant_name = Column(String, nullable=True)
+    is_income = Column(Boolean, default=False)
+    raw_data = Column(Text)  # JSON dump of raw Plaid data
+
+    # Relationships
+    user = relationship("User", back_populates="transactions")
+
+class Score(Base):
+    __tablename__ = "scores"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    score_value = Column(Integer)  # 0-1000
+    decision = Column(String)  # Approve, Review, Reject
+    calculated_at = Column(DateTime, default=datetime.utcnow)
+    version = Column(String, default="1.0.0")
+    explanation = Column(Text)  # Markdown or JSON summary of decision
+
+    # Relationships
+    user = relationship("User", back_populates="scores")
+
+class ProcessingLog(Base):
+    __tablename__ = "processing_logs"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"))
+    event_type = Column(String)  # SYNC, NLP, SCORING
+    status = Column(String)  # SUCCESS, FAILURE
+    message = Column(String)
+    timestamp = Column(DateTime, default=datetime.utcnow)
+</file>
+
+<file path="backend/Dockerfile">
+# Use official Python image
+FROM python:3.10-slim
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Set work directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy project
+COPY . .
+
+# Run the project with Uvicorn
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
+</file>
+
+<file path="backend/main.py">
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import os
+from dotenv import load_dotenv
+from .db.base import engine, Base
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
+
+# Load environment variables
+load_dotenv()
+
+app = FastAPI(
+    title="David Protocol API",
+    description="Backend for generating Financial Resilience Scores using bank data and AI.",
+    version="1.0.0"
+)
+
+# CORS configuration
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Adjust in production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/")
+async def health_check():
+    return {
+        "status": "online",
+        "message": "David Protocol Backend is running.",
+        "version": "1.0.0"
+    }
+
+from .routes import auth, plaid, scoring
+
+# Include routers
+app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
+app.include_router(plaid.router, prefix="/plaid", tags=["Plaid"])
+app.include_router(scoring.router, prefix="/scoring", tags=["Scoring"])
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+</file>
+
+<file path="backend/models/__init__.py">
+
+</file>
+
+<file path="backend/requirements.txt">
+fastapi[all]
+uvicorn
+sqlalchemy
+pydantic
+plaid-python
+google-generativeai
+scikit-learn
+xgboost
+pandas
+python-dotenv
+cryptography
+psycopg2-binary
+joblib
+xgboost
+pytest
+httpx
+</file>
+
+<file path="backend/routes/__init__.py">
+
+</file>
+
+<file path="backend/routes/auth.py">
+from fastapi import APIRouter, Depends, HTTPException, status
+from sqlalchemy.orm import Session
+from ..db.base import get_db
+from ..db.models import User
+from pydantic import BaseModel, EmailStr
+from typing import Optional
+
+router = APIRouter()
+
+class UserCreate(BaseModel):
+    email: EmailStr
+    password: str
+
+class UserResponse(BaseModel):
+    id: int
+    email: str
+    is_active: bool
+
+    class Config:
+        from_attributes = True
+
+@router.post("/register", response_model=UserResponse)
+def register(user_in: UserCreate, db: Session = Depends(get_db)):
+    db_user = db.query(User).filter(User.email == user_in.email).first()
+    if db_user:
+        raise HTTPException(status_code=400, detail="Email already registered")
+    
+    # In a real app, hash the password
+    new_user = User(
+        email=user_in.email,
+        hashed_password=user_in.password  # Placeholder
+    )
+    db.add(new_user)
+    db.commit()
+    db.refresh(new_user)
+    return new_user
+
+@router.get("/me", response_model=UserResponse)
+def get_me(user_id: int, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return user
+</file>
+
+<file path="backend/routes/plaid.py">
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from ..db.base import get_db
+from ..db.models import User
+from ..services.plaid_service import PlaidService
+from pydantic import BaseModel
+
+router = APIRouter()
+
+class TokenExchange(BaseModel):
+    public_token: str
+    user_id: int
+
+@router.post("/create_link_token")
+async def create_link_token(user_id: int, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    try:
+        response = await PlaidService.create_link_token(str(user_id))
+        return response
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+@router.post("/exchange_public_token")
+async def exchange_public_token(exchange: TokenExchange, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == exchange.user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    try:
+        response = await PlaidService.exchange_public_token(exchange.public_token)
+        # Store access token securely (should be encrypted)
+        user.plaid_access_token = response['access_token']
+        user.plaid_item_id = response['item_id']
+        db.commit()
+        return {"status": "success", "item_id": response['item_id']}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+</file>
+
+<file path="backend/routes/scoring.py">
+from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.orm import Session
+from ..db.base import get_db
+from ..db.models import User, Transaction, Score, ProcessingLog
+from ..services.plaid_service import PlaidService
+from ..services.nlp_service import NLPService
+from ..services.scoring_service import ScoringService
+from datetime import datetime, timedelta
+import json
+
+router = APIRouter()
+
+@router.post("/process/{user_id}")
+async def process_scoring_pipeline(user_id: int, db: Session = Depends(get_db)):
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user or not user.plaid_access_token:
+        raise HTTPException(status_code=400, detail="User not found or Plaid not linked")
+    
+    # 1. Fetch Transactions (Last 90 days)
+    end_date = datetime.now()
+    start_date = end_date - timedelta(days=90)
+    
+    try:
+        transactions_data = await PlaidService.get_transactions(user.plaid_access_token, start_date, end_date)
+        plaid_transactions = transactions_data.get('transactions', [])
+    except Exception as e:
+        log = ProcessingLog(user_id=user_id, event_type="SYNC", status="FAILURE", message=str(e))
+        db.add(log)
+        db.commit()
+        raise HTTPException(status_code=500, detail=f"Plaid Sync Error: {e}")
+
+    # 2. Process & Categorize
+    processed_transactions = []
+    for t in plaid_transactions:
+        # Check if already in DB
+        existing = db.query(Transaction).filter(Transaction.plaid_transaction_id == t['transaction_id']).first()
+        if existing:
+            processed_transactions.append({
+                "name": existing.name,
+                "amount": existing.amount,
+                "category": existing.resilience_category
+            })
+            continue
+
+        category = await NLPService.process_transaction(t)
+        
+        new_t = Transaction(
+            user_id=user_id,
+            plaid_transaction_id=t['transaction_id'],
+            amount=t['amount'],
+            date=datetime.strptime(t['date'], '%Y-%m-%d'),
+            name=t['name'],
+            resilience_category=category,
+            raw_data=json.dumps(t)
+        )
+        db.add(new_t)
+        processed_transactions.append({
+            "name": t['name'],
+            "amount": t['amount'],
+            "category": category
+        })
+    
+    db.commit()
+
+    # 3. Calculate Score
+    results = ScoringService.calculate_resilience_score(processed_transactions)
+    
+    new_score = Score(
+        user_id=user_id,
+        score_value=results['score'],
+        decision=results['decision'],
+        explanation=results['explanation']
+    )
+    db.add(new_score)
+    db.commit()
+
+    return results
+
+@router.get("/status/{user_id}")
+async def get_latest_score(user_id: int, db: Session = Depends(get_db)):
+    score = db.query(Score).filter(Score.user_id == user_id).order_by(Score.calculated_at.desc()).first()
+    if not score:
+        raise HTTPException(status_code=404, detail="No score found for user")
+    return {
+        "score": score.score_value,
+        "decision": score.decision,
+        "explanation": score.explanation,
+        "calculated_at": score.calculated_at
+    }
+</file>
+
+<file path="backend/scripts/train_models.py">
+import pandas as pd
+import numpy as np
+import joblib
+import os
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from xgboost import XGBClassifier
+
+def generate_synthetic_data(n_samples=1000):
+    """
+    Generates synthetic bank data for training the initial resilience model.
+    """
+    np.random.seed(42)
+    
+    # Features
+    income = np.random.uniform(2000, 10000, n_samples)
+    rent = np.random.uniform(500, 4000, n_samples)
+    savings = np.random.uniform(0, 5000, n_samples)
+    credit_utilization = np.random.uniform(0.1, 0.9, n_samples)
+    
+    # Simple target logic for resilience
+    # 1: Resilient, 0: Not Resilient
+    score = (income * 0.4) - (rent * 0.3) + (savings * 0.2) - (credit_utilization * 1000)
+    target = (score > np.percentile(score, 40)).astype(int)
+    
+    data = pd.DataFrame({
+        'income': income,
+        'rent': rent,
+        'savings': savings,
+        'credit_utilization': credit_utilization,
+        'target': target
+    })
+    
+    return data
+
+def train_and_save_models():
+    print("Generating synthetic data...")
+    data = generate_synthetic_data()
+    
+    X = data.drop('target', axis=1)
+    y = data['target']
+    
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    
+    # 1. Logistic Regression (Explainable)
+    print("Training Logistic Regression...")
+    lr_model = LogisticRegression()
+    lr_model.fit(X_train, y_train)
+    
+    # 2. XGBoost (High Accuracy)
+    print("Training XGBoost...")
+    xgb_model = XGBClassifier()
+    xgb_model.fit(X_train, y_train)
+    
+    # Save artifacts
+    models_dir = os.path.join('backend', 'models')
+    os.makedirs(models_dir, exist_ok=True)
+    
+    joblib.dump(lr_model, os.path.join(models_dir, 'logistic_resilience_v1.joblib'))
+    joblib.dump(xgb_model, os.path.join(models_dir, 'xgboost_resilience_v1.joblib'))
+    
+    print(f"Models saved successfully to {models_dir}")
+
+if __name__ == "__main__":
+    train_and_save_models()
+</file>
+
+<file path="backend/services/__init__.py">
+
+</file>
+
+<file path="backend/services/nlp_service.py">
+import os
+import google.generativeai as genai
+from typing import List, Dict, Any
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Configure Gemini
+GEN_API_KEY = os.getenv("GEMINI_API_KEY")
+if GEN_API_KEY:
+    genai.configure(api_key=GEN_API_KEY)
+    model = genai.GenerativeModel('gemini-1.5-flash')
+else:
+    model = None
+
+# Base Categorization Rules
+CATEGORIES = {
+    "INCOME": ["salary", "payroll", "deposit", "stripe", "transfer"],
+    "RENT": ["rent", "landlord", "apartment", "mortgage"],
+    "UTILITIES": ["electric", "water", "gas", "internet", "phone", "verizon", "att"],
+    "FOOD": ["restaurant", "groceries", "starbucks", "mcdonalds", "uber eats", "doordash"],
+    "SUBSCRIPTION": ["netflix", "spotify", "apple", "amazon prime", "hulu"],
+    "SHOPPING": ["amazon", "walmart", "target", "nike", "clothing"],
+    "DEBT": ["loan", "credit card", "amex", "chase", "bank of america"],
+    "SAVINGS": ["investment", "fidelity", "vanguard", "schwab", "wealthfront"]
+}
+
+class NLPService:
+    @staticmethod
+    def categorize_transaction_rule_based(transaction_name: str) -> str:
+        name_lower = transaction_name.lower()
+        for category, keywords in CATEGORIES.items():
+            if any(kw in name_lower for kw in keywords):
+                return category
+        return "OTHER"
+
+    @staticmethod
+    async def categorize_with_gemini(transaction_name: str, amount: float) -> str:
+        if not model:
+            return "OTHER"
+        
+        prompt = f"""
+        Categorize this bank transaction: '{transaction_name}' for an amount of ${amount}.
+        Choose one of: INCOME, RENT, UTILITIES, FOOD, SUBSCRIPTION, SHOPPING, DEBT, SAVINGS, OTHER.
+        Return ONLY the category name.
+        """
+        try:
+            response = model.generate_content(prompt)
+            return response.text.strip().upper()
+        except Exception as e:
+            print(f"Gemini Error: {e}")
+            return "OTHER"
+
+    @staticmethod
+    async def process_transaction(transaction: Dict[str, Any]) -> str:
+        name = transaction.get("name", "")
+        amount = transaction.get("amount", 0)
+        
+        # 1. Rule-based
+        category = NLPService.categorize_transaction_rule_based(name)
+        
+        # 2. Fallback to Gemini if "OTHER" and key exists
+        if category == "OTHER" and model:
+            category = await NLPService.categorize_with_gemini(name, amount)
+            
+        return category
+</file>
+
+<file path="backend/services/plaid_service.py">
+import plaid
+from plaid.api import plaid_api
+from plaid.model.link_token_create_request import LinkTokenCreateRequest
+from plaid.model.link_token_create_request_user import LinkTokenCreateRequestUser
+from plaid.model.products import Products
+from plaid.model.country_code import CountryCode
+from plaid.model.item_public_token_exchange_request import ItemPublicTokenExchangeRequest
+from plaid.model.transactions_get_request import TransactionsGetRequest
+from plaid.model.transactions_get_request_options import TransactionsGetRequestOptions
+import os
+from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+load_dotenv()
+
+PLAID_CLIENT_ID = os.getenv('PLAID_CLIENT_ID')
+PLAID_SECRET = os.getenv('PLAID_SECRET')
+PLAID_ENV = os.getenv('PLAID_ENV', 'sandbox')
+
+host = plaid.Environment.Sandbox
+if PLAID_ENV == 'development':
+    host = plaid.Environment.Development
+elif PLAID_ENV == 'production':
+    host = plaid.Environment.Production
+
+configuration = plaid.Configuration(
+    host=host,
+    api_key={
+        'clientId': PLAID_CLIENT_ID,
+        'secret': PLAID_SECRET,
+    }
+)
+
+api_client = plaid.ApiClient(configuration)
+client = plaid_api.PlaidApi(api_client)
+
+class PlaidService:
+    @staticmethod
+    async def create_link_token(user_id: str):
+        request = LinkTokenCreateRequest(
+            products=[Products('transactions')],
+            client_name="David Protocol",
+            country_codes=[CountryCode('US')],
+            language='en',
+            user=LinkTokenCreateRequestUser(client_user_id=user_id)
+        )
+        response = client.link_token_create(request)
+        return response.to_dict()
+
+    @staticmethod
+    async def exchange_public_token(public_token: str):
+        request = ItemPublicTokenExchangeRequest(
+            public_token=public_token
+        )
+        response = client.item_public_token_exchange(request)
+        return response.to_dict()
+
+    @staticmethod
+    async def get_transactions(access_token: str, start_date: datetime, end_date: datetime):
+        request = TransactionsGetRequest(
+            access_token=access_token,
+            start_date=start_date.date(),
+            end_date=end_date.date()
+        )
+        response = client.transactions_get(request)
+        return response.to_dict()
+</file>
+
+<file path="backend/services/scoring_service.py">
+from typing import List, Dict, Any
+from datetime import datetime
+import pandas as pd
+import numpy as np
+import joblib
+import os
+
+class ScoringService:
+    _lr_model = None
+    _xgb_model = None
+    _models_loaded = False
+
+    @classmethod
+    def load_models(cls):
+        """Loads models from the models directory if they exist."""
+        if cls._models_loaded:
+            return
+
+        models_dir = os.path.join(os.path.dirname(__file__), '..', 'models')
+        lr_path = os.path.join(models_dir, 'logistic_resilience_v1.joblib')
+        xgb_path = os.path.join(models_dir, 'xgboost_resilience_v1.joblib')
+
+        try:
+            if os.path.exists(lr_path):
+                cls._lr_model = joblib.load(lr_path)
+            if os.path.exists(xgb_path):
+                cls._xgb_model = joblib.load(xgb_path)
+            cls._models_loaded = True
+            print("ML models loaded successfully.")
+        except Exception as e:
+            print(f"Error loading models: {e}. Falling back to Rule-based scoring.")
+
+    @staticmethod
+    def calculate_resilience_score(transactions: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """
+        Calculates a Resilience Score (0-1000) using a hybrid approach:
+        1. Feature Engineering
+        2. ML Model Prediction (if available)
+        3. Rule-based Adjustments (Fallback/Refinement)
+        """
+        if not transactions:
+            return {"score": 0, "decision": "REJECT", "explanation": "No transaction data found."}
+
+        # Ensure models are loaded
+        ScoringService.load_models()
+
+        df = pd.DataFrame(transactions)
+        
+        # --- 1. Feature Engineering ---
+        total_income = df[df['category'] == 'INCOME']['amount'].sum()
+        total_rent = df[df['category'] == 'RENT']['amount'].abs().sum()
+        total_savings = df[df['category'] == 'SAVINGS']['amount'].abs().sum()
+        
+        rent_ratio = total_rent / total_income if total_income > 0 else 1
+        savings_rate = total_savings / total_income if total_income > 0 else 0
+        
+        # --- 2. ML Prediction ---
+        ml_score_base = 500  # Default base
+        
+        if ScoringService._lr_model or ScoringService._xgb_model:
+            # Prepare features for model
+            features = pd.DataFrame([{
+                'income': total_income,
+                'rent': total_rent,
+                'savings': total_savings,
+                'credit_utilization': 0.3 # Placeholder for now
+            }])
+            
+            try:
+                # Use Logistic Regression for explainability by default
+                if ScoringService._lr_model:
+                    prob = ScoringService._lr_model.predict_proba(features)[0][1]
+                    ml_score_base = int(prob * 1000)
+            except Exception as e:
+                print(f"Prediction error: {e}")
+
+        # --- 3. Rule-based Refinement ---
+        # We apply rules on top of ML or as pure fallback
+        score = ml_score_base
+        
+        # Penalty for high rent ratio
+        if rent_ratio > 0.4: score -= 100
+        elif rent_ratio < 0.2: score += 50
+        
+        # Bonus for high savings
+        if savings_rate > 0.15: score += 100
+        
+        # Final Score Capping
+        score = max(0, min(1000, score))
+        
+        decision = "APPROVE" if score > 750 else ("REVIEW" if score > 550 else "REJECT")
+        
+        explanation = f"Resilience Score: {score}. "
+        explanation += f"Income: ${total_income:.2f}, Savings Rate: {savings_rate*100:.1f}%. "
+        explanation += f"Rent represents {rent_ratio*100:.1f}% of monthly income."
+        
+        return {
+            "score": score,
+            "decision": decision,
+            "explanation": explanation
+        }
+</file>
+
+<file path="backend/utils/__init__.py">
+
+</file>
+
+<file path="david_protocol_access_tree.md">
+# 🔐 David Protocol — Access Tree & Token Management Design
+
+## 🧠 Goal
+Efficiently manage:
+- API Tokens (Plaid, Gemini)
+- Avoid repeated full pipeline execution
+- Cache results smartly
+
+---
+
+## 🌳 Access Tree Architecture
+
+```
+User Request
+     ↓
+ Auth Layer (JWT / Session)
+     ↓
+ Token Manager
+     ↓
+ ┌─────────────────────────────┐
+ │   Access Tree Controller    │
+ └─────────────────────────────┘
+     ↓
+ ┌───────────────┬───────────────┬───────────────┐
+ │ Cached Data   │ Partial Run   │ Full Run      │
+ └───────────────┴───────────────┴───────────────┘
+```
+
+---
+
+## 🔑 Token Storage Strategy
+
+### Tokens to Store:
+- Plaid Access Token
+- Gemini API Key (server-side only)
+
+### Storage:
+- Use environment variables for Gemini
+- Use encrypted DB storage for Plaid tokens
+
+### Example:
+```
+users_table:
+  user_id
+  plaid_access_token (encrypted)
+  last_sync_time
+```
+
+---
+
+## 🌲 Access Tree Logic
+
+### Step 1: Check Cache
+- If transactions already processed → return stored result
+
+### Step 2: Check Freshness
+- If last sync < threshold (e.g., 24h) → skip reprocessing
+
+### Step 3: Partial Update
+- Fetch only new transactions
+- Update features incrementally
+
+### Step 4: Full Pipeline (only if needed)
+- Run NLP + Feature Engineering + Scoring
+
+---
+
+## ⚡ Caching Layers
+
+| Layer | What to Cache | Why |
+|------|-------------|-----|
+| Transactions | Raw + categorized | Avoid re-fetch |
+| Features | Computed metrics | Avoid recompute |
+| Scores | Final output | Instant response |
+
+---
+
+## 🔁 Smart Recompute Strategy
+
+| Condition | Action |
+|----------|--------|
+| New transactions | Partial recompute |
+| No change | Return cached score |
+| Major change | Full recompute |
+
+---
+
+## 🧩 Implementation (FastAPI)
+
+### Middleware:
+- Check token validity
+- Attach user context
+
+### Service Layer:
+```
+if cached_score_exists and fresh:
+    return cached_score
+elif new_transactions:
+    update_features()
+    recompute_score()
+else:
+    full_pipeline()
+```
+
+---
+
+## 🔐 Security Best Practices
+
+- Encrypt Plaid tokens (AES)
+- Never expose Gemini key to frontend
+- Use HTTPS only
+- Rotate tokens periodically
+
+---
+
+## 🚀 Benefits
+
+- ⚡ Faster responses
+- 💸 Lower API cost (Gemini calls reduced)
+- 🔁 Efficient updates (no full rerun)
+- 🔐 Secure token handling
+
+---
+
+## 🔥 Final Insight
+
+**Access Tree = Smart decision system**
+
+Instead of:
+> Always recompute everything ❌
+
+You do:
+> Check → Reuse → Update only what changed ✅
+</file>
+
+<file path="david_protocol_backend_architecture.md">
+# 🚀 David Protocol — Backend System Design
+
+## 🧠 Overview
+A cost-efficient, explainable AI system to generate a **Financial Resilience Score** using bank transaction data.
+
+---
+
+## 🔷 Architecture Flow
+
+```
+Client (Frontend later)
+        ↓
+   FastAPI Backend
+        ↓
+[1] Plaid Data Ingestion
+        ↓
+[2] Data Cleaning Layer
+        ↓
+[3] Transaction Categorization (NLP)
+        ↓
+[4] Feature Engineering
+        ↓
+[5] Scoring Engine (ML Models)
+        ↓
+[6] Decision + Explainability
+        ↓
+   Database + Logs
+```
+
+---
+
+## 🧩 Module 1: Data Ingestion (Plaid)
+
+- Use Plaid API to fetch:
+  - Transactions
+  - Account balances
+- Store raw data in database
+
+---
+
+## 🧩 Module 2: Data Cleaning
+
+- Normalize transaction text
+- Remove noise (UPI tags, IDs)
+- Standardize merchant names
+
+---
+
+## 🧩 Module 3: NLP Categorization
+
+### Pipeline:
+1. Rule-based (free, fast)
+2. ML model (scikit-learn)
+3. Gemini fallback (only low-confidence)
+
+---
+
+## 🧩 Module 4: Feature Engineering
+
+- Income consistency
+- Spending variance
+- Savings ratio
+- Cash flow trends
+
+---
+
+## 🧩 Module 5: Scoring Models
+
+### Primary:
+- Logistic Regression (interpretable)
+
+### Secondary:
+- Decision Tree (rules)
+
+### Optional:
+- XGBoost (higher accuracy)
+
+---
+
+## 🧩 Module 6: Decision Engine
+
+| Score | Decision |
+|------|---------|
+| >750 | Approve |
+| 600-750 | Review |
+| <600 | Reject |
+
+---
+
+## 🧩 Module 7: Explainability
+
+- Store features used
+- Store model output
+- Provide reason codes
+
+---
+
+## 🧩 Database Tables
+
+- Users
+- Transactions
+- Categorized Transactions
+- Features
+- Scores
+- Logs
+
+---
+
+## ⚡ FastAPI Structure
+
+```
+backend/
+ ├── main.py
+ ├── routes/
+ ├── services/
+ ├── models/
+ ├── utils/
+ └── db/
+```
+
+---
+
+## 💸 Cost Optimization
+
+- Use rules first
+- Gemini only fallback
+- ML runs locally
+
+---
+
+## ⚠️ Edge Cases
+
+- No income → use balance trends
+- Gig workers → irregular pattern handling
+- Sparse data → fallback rules
+
+---
+
+## 🔥 Final Stack
+
+- FastAPI
+- scikit-learn
+- XGBoost
+- Plaid API
+- Gemini API
+</file>
+
+<file path="DEPLOYMENT.md">
+# 🚢 David Protocol — Deployment & Hosting Guide
+
+This project is built for high-performance scale and serverless deployment. It is optimized for **Render**, **Railway**, or **Google Cloud Run**.
+
+## 🏗️ 1. Prepare Your Environment
+Before deploying, ensure your `backend/.env` is fully populated:
+
+1. **Neon PostgreSQL**: Create a project on [Neon.tech](https://neon.tech/) and get the `DATABASE_URL`.
+2. **Plaid Integration**: Get your `PLAID_CLIENT_ID` and `69c640c0fd37e2000d972e2c` and `bca8283960ce79cbf3171925973b0b` from the Plaid Dashboard.
+3. **Gemini AI**: Get your `AIzaSyALjSt7E2AGXYCVUiO2eTJKpNz5E4eNRiA` from [Google AI Studio](https://aistudio.google.com/).
+4. **Secret Keys**: Generate these using:
+   ```bash
+   python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
+   ```
+
+---
+
+## 🚀 2. Deploy to Render (Recommended)
+This repo includes a `render.yaml` file for **One-Click Deployment**.
+
+1. **Connect GitHub**: Connect your repository at `https://github.com/TheAyushTandon/David-Protocol.git` to Render.
+2. **Auto-provision**: Render will detect `render.yaml` and automatically set up:
+   - **FastAPI Web Service**
+   - **PostgreSQL Database** (If you aren't using Neon)
+3. **Environment Variables**: Add all keys from your `.env` to the Render Dashboard's "Environment" section.
+
+---
+
+## 🐳 3. Deploy via Docker
+If you prefer fixed containers, use the included `backend/Dockerfile`:
+
+1. **Build**:
+   ```bash
+   docker build -t david-protocol-backend ./backend
+   ```
+2. **Run**:
+   ```bash
+   docker run -p 8000:8000 --env-file ./backend/.env david-protocol-backend
+   ```
+
+---
+
+## 📈 4. Post-Deployment
+Once the backend is live at `https://your-app.onrender.com`:
+1. Use the `/docs` endpoint to verify the API.
+2. Ensure `PLAID_ENV` is set to `sandbox` for testing or `development` for real data.
+3. **ML Check**: Verify that your `.joblib` models are correctly loaded by checking the server logs on startup.
+
+---
+👉 **[Go back to README](file:///d:/PROJECTS/stellaris%20hackathon/README.md)**
+</file>
+
+<file path="ML_ARCHITECTURE.md">
+# 🧠 David Protocol — ML Architecture & Integration Guide
+
+Welcome to the ML side of the David Protocol! This document explains how the backend consumes machine learning models and how you can integrate your trained models into the pipeline.
+
+## 🔷 System Overview
+
+The David Protocol generates a **Financial Resilience Score** (0-1000). The backend handles data ingestion (Plaid) and categorization (NLP), then hands off a set of aggregated features to your models to get a base score.
+
+## 📊 Data & Feature Pipeline
+
+Before the model is called, the raw transaction data goes through two layers:
+
+1.  **NLP Categorization**: (`backend/services/nlp_service.py`)
+    Translates raw transaction names into standard categories: `INCOME`, `RENT`, `UTILITIES`, `FOOD`, `SUBSCRIPTION`, `SHOPPING`, `DEBT`, `SAVINGS`, `OTHER`.
+2.  **Aggregation**: (`backend/services/scoring_service.py`)
+    Groups transactions over the last 90 days into features.
+
+### 📥 Model Input (Features)
+Your model must accept a `pandas.DataFrame` with the following columns:
+
+| Feature | Description |
+| :--- | :--- |
+| `income` | Floating point sum of all `INCOME` transactions. |
+| `rent` | Floating point absolute sum of all `RENT` transactions. |
+| `savings` | Floating point absolute sum of all `SAVINGS` transactions. |
+| `credit_utilization` | Float placeholder (currently defaulting to 0.3). |
+
+### 📤 Model Output
+- **Type**: Probability of "High Resilience".
+- **Range**: `0.0` to `1.0`.
+- **Note**: The backend multiplies this by 1000 to get the base `ml_score_base`.
+
+---
+
+## 🛠️ How to Integrate Your Models
+
+The backend is built to load models automatically from the `backend/models/` folder.
+
+### 1. Save Your Models
+Use `joblib` to serialize your models. Name them exactly as follows:
+- **Logistic Regression**: `logistic_resilience_v1.joblib`
+- **XGBoost**: `xgboost_resilience_v1.joblib`
+
+**Example Python code:**
+```python
+import joblib
+joblib.dump(your_model, 'backend/models/xgboost_resilience_v1.joblib')
+```
+
+### 2. File Location
+Place the files in:
+`David-Protocol/backend/models/`
+
+### 3. Dependencies
+The backend already includes the following in `requirements.txt`:
+- `scikit-learn`
+- `xgboost`
+- `pandas`
+- `joblib`
+
+---
+
+## 🏎️ Deployment & Workflow
+
+1.  **Local Training**: Train your models using the `backend/scripts/train_models.py` as a template for data generation.
+2.  **Refine Scripts**: You can modify `backend/scripts/train_models.py` to use your actual datasets.
+3.  **Push to GitHub**: Once you push your `.joblib` files to the `backend/models/` folder, the next deployment (on Render/Railway) will automatically pick them up and load them into memory.
+
+## ⚠️ Robustness & Fail-safes
+The `ScoringService` has a **Hybrid Logic**:
+- If your ML model is found, it uses it for the base score.
+- If the model is missing (or fails), it falls back to a **Rule-based system** to ensure the website stays functional.
+- It then applies "common sense" rules (like penalties for >40% rent ratio) on top of the ML score to ensure stability.
+
+---
+**Happy Modeling! 🚀**
+</file>
+
+<file path="README.md">
+# 🚀 The David Protocol
+
+The **David Protocol** is an AI-driven financial resilience platform. It uses bank transaction data (via Plaid) to generate a "Resilience Score," providing users with insights into their financial stability and health.
+
+## 🌟 Key Features
+- **Plaid Integration**: Secure, real-time transaction fetching.
+- **AI-Powered Categorization**: Hybrid NLP system using Rule-engines and **Gemini 1.5 Flash**.
+- **ML Scoring Engine**: Modular architecture supporting **Logistic Regression** and **XGBoost** for resilience predictions.
+- **Cloud Architecture**: Powered by **FastAPI** and **Neon (Serverless PostgreSQL)**.
+
+---
+
+## 🏗️ Project Structure
+```text
+backend/
+├── main.py            # API Entry Point
+├── routes/            # API Endpoints (Auth, Plaid, Scoring)
+├── services/          # Business Logic (NLP, Scoring Engine)
+├── db/                # Neon PostgreSQL Models
+├── models/            # ML Artifacts (.joblib files)
+└── scripts/           # Utility scripts (Training, etc.)
+```
+
+## 🧠 ML & AI Logic
+For detailed information on how to train, integrate, and interpret the machine learning models, please refer to:
+👉 **[ML Architecture & Integration Guide](file:///d:/PROJECTS/stellaris%20hackathon/ML_ARCHITECTURE.md)**
+
+---
+
+## 🛠️ Setup & Local Development
+1. **Initialize Environment**:
+   ```bash
+   pip install -r backend/requirements.txt
+   ```
+2. **Configure .env**:
+   Copy `.env.example` to `.env` and fill in your keys (Plaid, Gemini, Neon).
+3. **Run Server**:
+   ```bash
+   uvicorn backend.main:app --reload
+   ```
+
+---
+
+## 🚢 Deployment Guide
+For instructions on how to host this on **Render** or **Railway**, see:
+👉 **[Deployment Guide](file:///d:/PROJECTS/stellaris%20hackathon/DEPLOYMENT.md)**
+
+## 🤝 Team Workflow
+- **@TEAMMATE**: Please check `ML_ARCHITECTURE.md` for instructions on the feature set and model interface expected by the backend.
+</file>
+
+<file path="render.yaml">
+services:
+  - type: web
+    name: david-protocol-backend
+    env: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: david-protocol-db
+          property: connectionString
+      - key: PLAID_CLIENT_ID
+        sync: false
+      - key: PLAID_SECRET
+        sync: false
+      - key: PLAID_ENV
+        value: sandbox
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ENCRYPTION_KEY
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+
+databases:
+  - name: david-protocol-db
+    databaseName: david_protocol
+    user: david_admin
+    plan: free # Change to paid for production
+</file>
+
+</files>
