@@ -54,7 +54,7 @@ npm run dev
 ```
 
 ### 4. Test Accounts
-Use the following phone numbers to test specific financial profiles:
-- **9109460397**: Elite Profile (Score: 950-1000, A+ Grade)
-- **8439655313**: Salaried-Rich (Score: 850-920, A Grade)
-- **8178810191**: Regular Profile (Score: 400-600, B/C Grade)
+Use the following credentials to test specific financial profiles:
+- **theayushtandon@gmail.com** (Pass: `1234` | Phone: `9109460397`): **Elite Profile** (Score: 1000, A+ Grade).
+- **test@gmail.com** (Pass: `1234` | Phone: `8439655313`): **Salaried-Rich** (Score: 850-920, A Grade).
+- **test2@gmail.com** (Pass: `1234` | Phone: `8178810191`): **Regular Profile** (Score: 400-600, B/C Grade).
