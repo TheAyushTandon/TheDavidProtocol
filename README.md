@@ -54,7 +54,7 @@ npm run dev
 ```
 
 ### 4. Test Accounts
-Use the following credentials to test specific financial profiles:
+Use the following credentials to test specific financial profiles:(skip step 2 which was for linking bank accounts and directly access three premade accounts)
 - **theayushtandon@gmail.com** (Pass: `1234` | Phone: `9109460397`): **Elite Profile** (Score: 1000, A+ Grade).
 - **test@gmail.com** (Pass: `1234` | Phone: `8439655313`): **Salaried-Rich** (Score: 850-920, A Grade).
 - **test2@gmail.com** (Pass: `1234` | Phone: `8178810191`): **Regular Profile** (Score: 400-600, B/C Grade).
