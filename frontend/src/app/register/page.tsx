@@ -25,7 +25,8 @@ export default function RegisterPage() {
     setLoading(true);
     
     try {
-      const response = await fetch('http://127.0.0.1:8000/auth/register', {
+      const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const response = await fetch(`${baseUrl}/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -56,7 +57,8 @@ export default function RegisterPage() {
     setLoading(true);
     
     try {
-      const response = await fetch('http://127.0.0.1:8000/auth/verify-otp', {
+      const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const response = await fetch(`${baseUrl}/auth/verify-otp`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

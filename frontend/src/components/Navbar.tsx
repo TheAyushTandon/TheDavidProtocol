@@ -24,10 +24,16 @@ export function Navbar() {
       </div>
 
       <div className="flex items-center gap-4">
-        <Button variant="ghost" className="text-white hover:bg-white/10 hidden sm:flex">Login</Button>
-        <Button className="bg-[#00ff88] text-black hover:bg-[#00ff88]/90 font-bold rounded-full px-6">
-          Get Started
-        </Button>
+        <Link href="/login">
+          <Button variant="ghost" className="text-white hover:bg-white/10 flex">
+            Login
+          </Button>
+        </Link>
+        <Link href="/register">
+          <Button className="bg-[#00ff88] text-black hover:bg-[#00ff88]/90 font-bold rounded-full px-6">
+            Get Started
+          </Button>
+        </Link>
       </div>
     </motion.nav>
   );

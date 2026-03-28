@@ -22,7 +22,8 @@ const BankConnection: React.FC<BankConnectionProps> = ({ userId, onSuccess }) =>
     setError(null);
 
     try {
-      const response = await fetch('/api/bank/connect', {
+      const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+      const response = await fetch(`${baseUrl}/bank/connect`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

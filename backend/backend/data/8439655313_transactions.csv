@@ -1,0 +1,6 @@
+date,name,amount,category,merchant_name,is_income
+2024-03-01,Salary credit,50000.00,Income,Company Inc,true
+2024-03-05,Starbucks Coffee,15.50,Food,Starbucks,false
+2024-03-10,Amazon Shopping,120.00,Shopping,Amazon,false
+2024-03-15,Netflix Subscription,15.99,Entertainment,Netflix,false
+2024-03-20,Shell Gas,45.00,Travel,Shell,false

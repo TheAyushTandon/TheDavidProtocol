@@ -1,0 +1,61 @@
+Date,Description,Amount,Category,PaymentMethod,Location,AccountType,TransactionType,DeviceUsed,Currency,MerchantType,LoyaltyProgram,Weekday,Month,TimeOfDay
+01-01-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+03-01-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+06-01-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+16-01-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+21-01-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+31-01-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+02-02-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+05-02-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+15-02-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+20-02-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+01-03-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+03-03-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+06-03-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+16-03-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+21-03-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+31-03-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+02-04-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+05-04-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+15-04-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+20-04-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+30-04-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+02-05-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+05-05-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+15-05-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+20-05-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+30-05-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+01-06-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+04-06-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+14-06-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+19-06-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+29-06-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+01-07-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+04-07-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+14-07-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+19-07-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+29-07-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+31-07-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+03-08-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+13-08-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+18-08-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+28-08-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+30-08-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+02-09-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+12-09-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+17-09-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+27-09-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+29-09-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+02-10-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+12-10-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+17-10-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+27-10-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+29-10-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+01-11-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+11-11-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+16-11-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon
+26-11-2024,Monthly Executive Salary,1500000.0,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Friday,Month,Morning
+28-11-2024,Premium Apartment Rent,150000.0,Rent,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Housing,No,Sunday,Month,Morning
+01-12-2024,Utility Bill Consistency,10000.0,Utilities,UPI,Mumbai,Savings,Debit,Mobile,INR,Bills,No,Wednesday,Month,Evening
+11-12-2024,High-End Dining & Travel,375000.0,Luxury,Credit Card,Mumbai,Credit Card,Debit,Desktop,INR,Leisure,Yes,Saturday,Month,Night
+16-12-2024,Incidental Spend,5000.0,Shopping,UPI,Mumbai,Savings,Debit,Mobile,INR,Retail,No,Tuesday,Month,Afternoon

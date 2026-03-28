@@ -51,10 +51,10 @@ export default function WhyEquisPage() {
           <motion.h1 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="text-[6rem] md:text-[11rem] font-display font-black leading-[0.75] mb-4 tracking-tighter"
+            className="text-[4.5rem] md:text-[11rem] font-display font-black leading-[0.7] mb-4 tracking-tighter"
           >
-            THE SYSTEM IS<br/>
-             <span className="text-[#00ff88]">OBSOLETE.</span>
+            <span className="whitespace-nowrap block -ml-[2rem] md:-ml-[8rem]" style={{ wordSpacing: '-0.2em' }}>THE SYSTEM IS</span><br/>
+             <span className="text-[#00ff88] block -mt-[1.2rem] md:-mt-[9rem] -ml-[0.5rem] md:-ml-[8rem] relative z-10">OBSOLETE.</span>
           </motion.h1>
           <div className="flex justify-end">
             <motion.p 

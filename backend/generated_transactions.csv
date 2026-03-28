@@ -1,0 +1,121 @@
+Date,Description,Amount,Category,PaymentMethod,Location,AccountType,TransactionType,DeviceUsed,Currency,MerchantType,LoyaltyProgram,Weekday,Month,TimeOfDay
+02-01-2025,Transaction at BookMyShow,9352.64,Entertainment,Credit Card,Pune,Savings,Debit,Desktop,INR,Service,No,Thursday,January,Afternoon
+04-01-2025,Transaction at Zara,17384.53,Shopping,Net Banking,Pune,Savings,Debit,POS Terminal,INR,Retail,No,Saturday,January,Afternoon
+06-01-2025,Transaction at IndiGo,10298.26,Travel,Credit Card,Chennai,Credit Card,Debit,Mobile,INR,Service,Yes,Monday,January,Afternoon
+07-01-2025,Transaction at McDonalds,1145.05,Food,Credit Card,Bangalore,Credit Card,Debit,Desktop,INR,Restaurant,No,Tuesday,January,Night
+10-01-2025,Transaction at Vistara,10854.38,Travel,Credit Card,Chennai,Credit Card,Debit,Mobile,INR,Service,No,Friday,January,Evening
+13-01-2025,Transaction at Netflix,9473.76,Entertainment,Credit Card,Hyderabad,Savings,Debit,POS Terminal,INR,Service,Yes,Monday,January,Evening
+18-01-2025,Transaction at PVR,8329.24,Entertainment,Net Banking,Hyderabad,Credit Card,Debit,Desktop,INR,Service,No,Saturday,January,Evening
+20-01-2025,Transaction at Vistara,1009.6,Travel,UPI,Mumbai,Credit Card,Debit,Mobile,INR,Service,Yes,Monday,January,Morning
+30-01-2025,Transaction at Flipkart,2816.81,Shopping,UPI,Kolkata,Savings,Debit,Mobile,INR,Retail,Yes,Thursday,January,Morning
+02-02-2025,Transaction at Taco Bell,17242.0,Food,Net Banking,Kolkata,Savings,Debit,POS Terminal,INR,Restaurant,Yes,Sunday,February,Evening
+04-02-2025,Transaction at Netflix,9643.24,Entertainment,Debit Card,Bangalore,Savings,Debit,Desktop,INR,Service,No,Tuesday,February,Evening
+05-02-2025,Transaction at Dominos,4261.15,Food,Debit Card,Delhi,Credit Card,Debit,Desktop,INR,Restaurant,No,Wednesday,February,Night
+06-02-2025,Transaction at Ola,242.06,Transport,Debit Card,Chennai,Savings,Debit,POS Terminal,INR,Service,Yes,Thursday,February,Morning
+10-02-2025,Transaction at Apollo,1399.19,Healthcare,UPI,Chennai,Credit Card,Debit,POS Terminal,INR,Service,No,Monday,February,Evening
+11-02-2025,Transaction at Aha,2761.01,Entertainment,Net Banking,Bangalore,Credit Card,Debit,Mobile,INR,Service,Yes,Tuesday,February,Morning
+13-02-2025,Transaction at Myntra,11480.62,Shopping,Debit Card,Hyderabad,Credit Card,Debit,POS Terminal,INR,Retail,Yes,Thursday,February,Night
+15-02-2025,Transaction at Zara,19197.86,Shopping,Net Banking,Bangalore,Savings,Debit,Desktop,INR,Retail,Yes,Saturday,February,Afternoon
+18-02-2025,Transaction at Zara,11238.43,Shopping,Net Banking,Bangalore,Credit Card,Debit,Mobile,INR,Retail,No,Tuesday,February,Afternoon
+18-02-2025,Transaction at BookMyShow,6769.76,Entertainment,Debit Card,Mumbai,Credit Card,Debit,Desktop,INR,Service,No,Tuesday,February,Evening
+19-02-2025,Transaction at IRCTC,15212.83,Travel,Credit Card,Pune,Savings,Debit,Mobile,INR,Service,Yes,Wednesday,February,Evening
+19-02-2025,Transaction at Zepto,3689.29,Grocery,Debit Card,Hyderabad,Credit Card,Debit,Mobile,INR,Retail,Yes,Wednesday,February,Night
+25-02-2025,Transaction at PVR,8042.79,Entertainment,Credit Card,Bangalore,Savings,Debit,Desktop,INR,Service,Yes,Tuesday,February,Evening
+27-02-2025,Transaction from Company I work at,151601.89,Salary,Net Banking,Hyderabad,Salary,Credit,Desktop,INR,Salary,No,Thursday,February,Morning
+28-02-2025,Transaction at BookMyShow,16035.7,Entertainment,UPI,Pune,Credit Card,Debit,Mobile,INR,Service,Yes,Friday,February,Night
+03-03-2025,Transaction at Flipkart,2334.57,Shopping,Debit Card,Bangalore,Savings,Debit,Mobile,INR,Retail,No,Monday,March,Afternoon
+03-03-2025,Transaction at Netflix,18014.68,Entertainment,Net Banking,Chennai,Savings,Debit,POS Terminal,INR,Service,No,Monday,March,Evening
+03-03-2025,Transaction at Myntra,503.86,Shopping,UPI,Mumbai,Credit Card,Debit,Desktop,INR,Retail,No,Monday,March,Evening
+09-03-2025,Transaction at Amazon,1893.5,Shopping,Debit Card,Bangalore,Credit Card,Debit,Desktop,INR,Retail,Yes,Sunday,March,Night
+16-03-2025,Transaction at Blinkit,2034.36,Grocery,Debit Card,Hyderabad,Credit Card,Debit,Desktop,INR,Retail,Yes,Sunday,March,Night
+16-03-2025,Transaction at CloudNine,4657.7,Healthcare,Net Banking,Delhi,Savings,Debit,Mobile,INR,Service,Yes,Sunday,March,Morning
+17-03-2025,Transaction at Amazon,9503.58,Shopping,Debit Card,Kolkata,Credit Card,Debit,Desktop,INR,Retail,No,Monday,March,Night
+19-03-2025,Transaction at Amazon,2310.59,Shopping,Net Banking,Chennai,Savings,Debit,Mobile,INR,Retail,Yes,Wednesday,March,Evening
+22-03-2025,Transaction at Zepto,8881.86,Grocery,UPI,Bangalore,Credit Card,Debit,POS Terminal,INR,Retail,No,Saturday,March,Afternoon
+09-04-2025,Transaction at IndiGo,11306.92,Travel,Net Banking,Hyderabad,Credit Card,Debit,POS Terminal,INR,Service,Yes,Wednesday,April,Morning
+12-04-2025,Transaction at MakeMyTrip,11441.02,Travel,Credit Card,Kolkata,Credit Card,Debit,Mobile,INR,Service,Yes,Saturday,April,Afternoon
+14-04-2025,Transaction at Dmart,1137.22,Grocery,Net Banking,Mumbai,Credit Card,Debit,Desktop,INR,Retail,Yes,Monday,April,Evening
+15-04-2025,Transaction at Vistara,15748.57,Travel,UPI,Pune,Credit Card,Debit,Mobile,INR,Service,No,Tuesday,April,Afternoon
+17-04-2025,Transaction at Taco Bell,13416.52,Food,Credit Card,Delhi,Credit Card,Debit,Desktop,INR,Restaurant,Yes,Thursday,April,Morning
+17-04-2025,Transaction at IRCTC,10516.57,Travel,Credit Card,Bangalore,Credit Card,Debit,Desktop,INR,Service,No,Thursday,April,Night
+24-04-2025,Transaction at Zara,9123.22,Shopping,Credit Card,Bangalore,Credit Card,Debit,Mobile,INR,Retail,Yes,Thursday,April,Morning
+03-05-2025,Transaction at Apollo,15206.82,Healthcare,Debit Card,Mumbai,Credit Card,Debit,Desktop,INR,Service,No,Saturday,May,Morning
+04-05-2025,Transaction at Zara,11324.44,Shopping,Net Banking,Hyderabad,Savings,Debit,Mobile,INR,Retail,Yes,Sunday,May,Evening
+04-05-2025,Transaction at Pharmeasy,18271.99,Healthcare,Net Banking,Hyderabad,Credit Card,Debit,Desktop,INR,Service,No,Sunday,May,Night
+08-05-2025,Transaction at Metro,6101.11,Transport,UPI,Bangalore,Savings,Debit,POS Terminal,INR,Service,No,Thursday,May,Morning
+15-05-2025,Transaction from Company I work at,111262.85,Salary,Net Banking,Chennai,Salary,Credit,Desktop,INR,Salary,No,Thursday,May,Evening
+25-05-2025,Transaction at Amazon,9550.74,Shopping,Net Banking,Mumbai,Credit Card,Debit,Desktop,INR,Retail,No,Sunday,May,Morning
+25-05-2025,Transaction at McDonalds,15790.09,Food,Net Banking,Hyderabad,Savings,Debit,POS Terminal,INR,Restaurant,No,Sunday,May,Morning
+27-05-2025,Transaction at IRCTC,6527.07,Travel,Credit Card,Pune,Credit Card,Debit,Desktop,INR,Service,Yes,Tuesday,May,Morning
+27-05-2025,Transaction at IRCTC,15040.41,Travel,UPI,Pune,Credit Card,Debit,Desktop,INR,Service,Yes,Tuesday,May,Afternoon
+27-05-2025,Transaction at Uber,9711.39,Transport,UPI,Mumbai,Credit Card,Debit,Mobile,INR,Service,Yes,Tuesday,May,Morning
+28-05-2025,Transaction at Zepto,13745.78,Grocery,Debit Card,Kolkata,Savings,Debit,Mobile,INR,Retail,Yes,Wednesday,May,Morning
+30-05-2025,Transaction from Company I work at,87946.3,Salary,Net Banking,Pune,Salary,Credit,Desktop,INR,Salary,No,Friday,May,Night
+31-05-2025,Transaction at McDonalds,17771.74,Food,Net Banking,Pune,Credit Card,Debit,Mobile,INR,Restaurant,No,Saturday,May,Afternoon
+01-06-2025,Transaction at Uber,18530.51,Transport,Credit Card,Pune,Credit Card,Debit,Desktop,INR,Service,Yes,Sunday,June,Morning
+02-06-2025,Transaction at Aha,13276.84,Entertainment,Credit Card,Delhi,Credit Card,Debit,Desktop,INR,Service,Yes,Monday,June,Evening
+05-06-2025,Transaction from Company I work at,71159.16,Salary,Net Banking,Mumbai,Salary,Credit,Desktop,INR,Salary,No,Thursday,June,Night
+16-06-2025,Transaction at Myntra,1720.86,Shopping,Credit Card,Mumbai,Savings,Debit,POS Terminal,INR,Retail,Yes,Monday,June,Evening
+16-06-2025,Transaction at CloudNine,12395.12,Healthcare,Debit Card,Pune,Savings,Debit,Mobile,INR,Service,No,Monday,June,Afternoon
+19-06-2025,Transaction from Company I work at,84694.39,Salary,Net Banking,Bangalore,Salary,Credit,Mobile,INR,Salary,No,Thursday,June,Afternoon
+21-06-2025,Transaction at Pharmeasy,5846.49,Healthcare,UPI,Hyderabad,Savings,Debit,Mobile,INR,Service,Yes,Saturday,June,Night
+04-07-2025,Transaction at Vistara,16150.99,Travel,Debit Card,Kolkata,Credit Card,Debit,POS Terminal,INR,Service,Yes,Friday,July,Morning
+08-07-2025,Transaction at Uber,13747.63,Transport,UPI,Delhi,Savings,Debit,Desktop,INR,Service,No,Tuesday,July,Night
+10-07-2025,Mutual Fund Return,198944.05,Investment,Net Banking,Chennai,Savings,Credit,Desktop,INR,Service,No,Thursday,July,Evening
+10-07-2025,Transaction at Zepto,12601.24,Grocery,Credit Card,Chennai,Credit Card,Debit,POS Terminal,INR,Retail,Yes,Thursday,July,Afternoon
+11-07-2025,Transaction at Pharmeasy,17367.34,Healthcare,Debit Card,Chennai,Credit Card,Debit,POS Terminal,INR,Service,No,Friday,July,Evening
+12-07-2025,Transaction at Zepto,13842.35,Grocery,UPI,Chennai,Credit Card,Debit,Mobile,INR,Retail,Yes,Saturday,July,Evening
+13-07-2025,Transaction at CloudNine,14923.71,Healthcare,Debit Card,Hyderabad,Credit Card,Debit,Desktop,INR,Service,No,Sunday,July,Night
+13-07-2025,Transaction at CloudNine,4528.51,Healthcare,Debit Card,Bangalore,Credit Card,Debit,Mobile,INR,Service,Yes,Sunday,July,Evening
+18-07-2025,Mutual Fund Return,99058.39,Investment,UPI,Pune,Savings,Credit,POS Terminal,INR,Service,No,Friday,July,Evening
+21-07-2025,Transaction at Metro,410.94,Transport,Credit Card,Chennai,Savings,Debit,Desktop,INR,Service,Yes,Monday,July,Morning
+29-07-2025,Transaction at Vistara,1642.85,Travel,UPI,Delhi,Savings,Debit,POS Terminal,INR,Service,No,Tuesday,July,Evening
+30-07-2025,Transaction at PVR,334.03,Entertainment,Debit Card,Pune,Credit Card,Debit,Desktop,INR,Service,Yes,Wednesday,July,Morning
+01-08-2025,Transaction at Flipkart,13081.9,Shopping,Debit Card,Mumbai,Savings,Debit,Mobile,INR,Retail,Yes,Friday,August,Night
+01-08-2025,Transaction at Cream Stone,14453.92,Food,Debit Card,Bangalore,Savings,Debit,Mobile,INR,Restaurant,Yes,Friday,August,Evening
+02-08-2025,Transaction at CloudNine,3763.2,Healthcare,Net Banking,Bangalore,Savings,Debit,POS Terminal,INR,Service,Yes,Saturday,August,Morning
+04-08-2025,Transaction at Aha,3970.91,Entertainment,Credit Card,Hyderabad,Credit Card,Debit,POS Terminal,INR,Service,No,Monday,August,Morning
+06-08-2025,Transaction at McDonalds,8224.31,Food,Net Banking,Pune,Credit Card,Debit,Mobile,INR,Restaurant,Yes,Wednesday,August,Afternoon
+14-08-2025,Transaction at Netflix,8943.82,Entertainment,UPI,Chennai,Credit Card,Debit,POS Terminal,INR,Service,No,Thursday,August,Evening
+24-08-2025,Transaction at Zara,8296.27,Shopping,UPI,Chennai,Savings,Debit,Desktop,INR,Retail,No,Sunday,August,Evening
+26-08-2025,Transaction at Cream Stone,1674.56,Food,Net Banking,Hyderabad,Savings,Debit,Desktop,INR,Restaurant,Yes,Tuesday,August,Evening
+31-08-2025,Transaction at Netflix,19300.53,Entertainment,Net Banking,Hyderabad,Savings,Debit,Desktop,INR,Service,Yes,Sunday,August,Afternoon
+05-09-2025,Transaction from Company I work at,57370.48,Salary,Net Banking,Mumbai,Salary,Credit,Mobile,INR,Salary,No,Friday,September,Morning
+06-09-2025,Transaction at PVR,9256.84,Entertainment,Credit Card,Bangalore,Savings,Debit,Mobile,INR,Service,No,Saturday,September,Night
+07-09-2025,Transaction at Dmart,7237.43,Grocery,UPI,Pune,Credit Card,Debit,Mobile,INR,Retail,Yes,Sunday,September,Morning
+13-09-2025,Transaction at IRCTC,12333.75,Travel,Net Banking,Bangalore,Credit Card,Debit,Mobile,INR,Service,No,Saturday,September,Night
+16-09-2025,Transaction at Zepto,7496.42,Grocery,Credit Card,Kolkata,Savings,Debit,Desktop,INR,Retail,Yes,Tuesday,September,Night
+28-09-2025,Transaction at Myntra,3853.74,Shopping,Debit Card,Delhi,Savings,Debit,Mobile,INR,Retail,Yes,Sunday,September,Morning
+03-10-2025,Transaction at PVR,9125.38,Entertainment,Credit Card,Chennai,Credit Card,Debit,Desktop,INR,Service,Yes,Friday,October,Afternoon
+04-10-2025,Transaction at Taco Bell,18397.59,Food,Credit Card,Kolkata,Credit Card,Debit,Mobile,INR,Restaurant,No,Saturday,October,Morning
+04-10-2025,Transaction from Company I work at,132963.2,Salary,Net Banking,Chennai,Salary,Credit,Mobile,INR,Salary,No,Saturday,October,Morning
+10-10-2025,Transaction at CloudNine,679.6,Healthcare,UPI,Pune,Credit Card,Debit,Mobile,INR,Service,Yes,Friday,October,Night
+11-10-2025,Transaction at Taco Bell,19742.8,Food,Credit Card,Pune,Credit Card,Debit,POS Terminal,INR,Restaurant,No,Saturday,October,Morning
+13-10-2025,Transaction at IRCTC,6089.93,Travel,Debit Card,Pune,Savings,Debit,Mobile,INR,Service,Yes,Monday,October,Afternoon
+15-10-2025,Transaction at Pharmeasy,11218.8,Healthcare,Net Banking,Hyderabad,Savings,Debit,Mobile,INR,Service,No,Wednesday,October,Afternoon
+17-10-2025,Transaction at PVR,11084.93,Entertainment,Debit Card,Delhi,Savings,Debit,Desktop,INR,Service,Yes,Friday,October,Evening
+22-10-2025,Transaction at Vistara,18019.45,Travel,Debit Card,Hyderabad,Credit Card,Debit,Mobile,INR,Service,Yes,Wednesday,October,Morning
+27-10-2025,Transaction at McDonalds,10815.97,Food,Credit Card,Delhi,Savings,Debit,POS Terminal,INR,Restaurant,Yes,Monday,October,Afternoon
+29-10-2025,Transaction at Cream Stone,2753.24,Food,Debit Card,Kolkata,Savings,Debit,POS Terminal,INR,Restaurant,Yes,Wednesday,October,Night
+29-10-2025,Transaction at CloudNine,3433.17,Healthcare,UPI,Delhi,Credit Card,Debit,Mobile,INR,Service,No,Wednesday,October,Morning
+31-10-2025,Transaction at CloudNine,351.21,Healthcare,Net Banking,Hyderabad,Credit Card,Debit,POS Terminal,INR,Service,No,Friday,October,Evening
+03-11-2025,Transaction at Metro,5176.31,Transport,Net Banking,Mumbai,Credit Card,Debit,POS Terminal,INR,Service,No,Monday,November,Morning
+04-11-2025,Transaction from Company I work at,77517.15,Salary,Net Banking,Bangalore,Salary,Credit,Mobile,INR,Salary,No,Tuesday,November,Evening
+04-11-2025,Transaction at Uber,9569.07,Transport,Net Banking,Bangalore,Credit Card,Debit,Desktop,INR,Service,No,Tuesday,November,Morning
+05-11-2025,Transaction at Pharmeasy,5303.56,Healthcare,UPI,Bangalore,Credit Card,Debit,Mobile,INR,Service,Yes,Wednesday,November,Night
+09-11-2025,Transaction at Netflix,2774.08,Entertainment,Credit Card,Bangalore,Savings,Debit,Desktop,INR,Service,Yes,Sunday,November,Night
+17-11-2025,Transaction at TSRTC,9621.11,Transport,UPI,Mumbai,Credit Card,Debit,Desktop,INR,Service,Yes,Monday,November,Morning
+19-11-2025,Transaction at Netflix,6473.73,Entertainment,Debit Card,Delhi,Credit Card,Debit,Desktop,INR,Service,No,Wednesday,November,Night
+20-11-2025,Mutual Fund Return,87431.45,Investment,Debit Card,Bangalore,Savings,Credit,Mobile,INR,Service,No,Thursday,November,Night
+21-11-2025,Transaction at Blinkit,19082.19,Grocery,Debit Card,Bangalore,Savings,Debit,Mobile,INR,Retail,No,Friday,November,Evening
+29-11-2025,Transaction at Pharmeasy,4811.06,Healthcare,Credit Card,Pune,Credit Card,Debit,POS Terminal,INR,Service,Yes,Saturday,November,Night
+30-11-2025,Transaction at IndiGo,19342.59,Travel,UPI,Bangalore,Savings,Debit,Mobile,INR,Service,Yes,Sunday,November,Morning
+01-12-2025,Transaction at PVR,13793.07,Entertainment,Net Banking,Hyderabad,Savings,Debit,Mobile,INR,Service,No,Monday,December,Evening
+04-12-2025,Transaction at Ola,7460.64,Transport,Net Banking,Kolkata,Savings,Debit,POS Terminal,INR,Service,No,Thursday,December,Night
+11-12-2025,Transaction at CloudNine,14258.17,Healthcare,Net Banking,Mumbai,Savings,Debit,Mobile,INR,Service,No,Thursday,December,Evening
+12-12-2025,Transaction at Metro,19547.16,Transport,Net Banking,Mumbai,Savings,Debit,Desktop,INR,Service,Yes,Friday,December,Evening
+15-12-2025,Transaction from Company I work at,140050.69,Salary,Net Banking,Mumbai,Salary,Credit,Mobile,INR,Salary,No,Monday,December,Night
+21-12-2025,Transaction at TSRTC,2800.12,Transport,Credit Card,Kolkata,Credit Card,Debit,POS Terminal,INR,Service,No,Sunday,December,Afternoon
+22-12-2025,Transaction at Zepto,12361.37,Grocery,Debit Card,Bangalore,Savings,Debit,Desktop,INR,Retail,No,Monday,December,Afternoon
+27-12-2025,Transaction at Apollo,4141.68,Healthcare,Net Banking,Pune,Savings,Debit,Mobile,INR,Service,No,Saturday,December,Morning
+29-12-2025,Transaction at Aha,2818.49,Entertainment,Credit Card,Delhi,Credit Card,Debit,POS Terminal,INR,Service,Yes,Monday,December,Night
