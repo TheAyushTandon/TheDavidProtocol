@@ -90,7 +90,7 @@ class ScoringService:
         burn_velocity = f"{burn_vel_num:.2f}x"
         
         explanation = f"Pillars: Balance({w_balance:.1f}), Priority({w_priority:.1f}), Consistency({w_consistency:.1f}), Luxury({w_luxury:.1f}), Buffer({income_bonus:.1f}). "
-        explanation += f"Score of {resilience_score} reflects a {savings_rate*100:.1f}% savings rate against a ${monthly_inflow:,.0f} monthly inflow."
+        explanation += f"Score of {resilience_score} reflects a {savings_rate*100:.1f}% savings rate against a ₹{monthly_inflow:,.0f} monthly inflow."
 
         return {
             "score": resilience_score,

@@ -28,7 +28,7 @@ export default function DashboardPage() {
 
     const checkAndProcess = async () => {
       try {
-        const baseUrl = "http://127.0.0.1:8000";
+        const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
         const statusRes = await fetch(`${baseUrl}/scoring/status/${id}`);
         if (statusRes.ok) {
            const scoreData = await statusRes.json();
@@ -182,7 +182,7 @@ export default function DashboardPage() {
                             <span className="text-[10px] font-black uppercase tracking-widest text-white/30">Total Inflow</span>
                         </div>
                         <h4 className="text-4xl font-display font-black text-white group-hover:text-[#00ff88] transition-colors tracking-tighter">
-                            ${(data?.total_inflow || 0).toLocaleString()}
+                            ₹{(data?.total_inflow || 0).toLocaleString()}
                         </h4>
                     </motion.div>
 
@@ -197,7 +197,7 @@ export default function DashboardPage() {
                             <span className="text-[10px] font-black uppercase tracking-widest text-white/30">Total Outflow</span>
                         </div>
                         <h4 className="text-4xl font-display font-black text-white group-hover:text-red-500 transition-colors tracking-tighter">
-                            ${(data?.total_outflow || 0).toLocaleString()}
+                            ₹{(data?.total_outflow || 0).toLocaleString()}
                         </h4>
                     </motion.div>
                 </div>
